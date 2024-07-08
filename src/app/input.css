@@ -568,9 +568,7 @@ body {
   margin-left: -.8rem;
 }
 
-.custom-mt{
-  margin-top: 6rem;
-}
+
 .w-22{
   width: 5.5rem;
 }
@@ -582,11 +580,12 @@ body {
   width: 88%;
  
 }
-
 .h-250{
   height: 53rem;
 }
-
+.h-40{
+  height: 40rem;
+}
 .w-50{
   width: 22rem;
 }
