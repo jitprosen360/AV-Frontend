@@ -15,6 +15,11 @@ function Outdoors() {
             gsap.killTweensOf(compresDivRef.current);
             gsap.killTweensOf(compresTextRef.current);
 
+            gsap.fromTo('.coverVideo',
+                { display: 'block',  duration: 0, },
+                { display: 'none', duration: 0, }
+            );
+
             gsap.fromTo(tenShowcaseRef.current,
                 { display: 'none', opacity:0, duration: 0.5, },
                 { display: 'block', duration: 0.5, opacity:1 }
@@ -39,6 +44,10 @@ function Outdoors() {
             gsap.killTweensOf(compresDivRef.current);
             gsap.killTweensOf(compresTextRef.current);
 
+  gsap.fromTo('.coverVideo',
+                { display: 'none',  duration: 0, },
+                { display: 'block', duration: 0, }
+            );
 
             gsap.to(tenShowcaseRef.current,
                 { display: 'none', duration: 0.1 }
@@ -64,10 +73,11 @@ function Outdoors() {
     }, []);
 
     return (
-        <div ref={tenShowcaseRef} className="showcase oneShowcase bg-red-500 bg-[url('/outdoors_bg.jpg')] hidden">
+        <div ref={tenShowcaseRef} className="showcase  bg-red-500 bg-[url('/outdoors_bg.jpg')] hidden">
+            <div className='tenShowcase'> 
             <div className="flex flex-col lg:flex-row justify-center">
-                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl'>
-                    Designer
+                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl text-white'>
+                Outdoors
                 </div>
                 <div className='pt-20 lg:pt-20'>
                     <div className='compresCover'>
@@ -76,8 +86,9 @@ function Outdoors() {
                             </div>
                         </div>
                     </div>
-                    <p className='text-3xl'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
+                    <p className='text-3xl text-white'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
                 </div>
+            </div>
             </div>
         </div>
     );

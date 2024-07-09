@@ -25,9 +25,12 @@ function Lounge() {
                 { display: 'block', duration: 0.1, opacity:1 }
             );
 
+     
+
+                // left to right
             gsap.fromTo(compresDivRef.current,
-                { width: '0%', right: '0', left: 'auto' },
-                { width: '100%', duration: 1, ease: "power4.out" }
+                { width: '0%', left: '0',right:'auto' },
+                { width: '100%', duration: 1, ease: "power4.out", }
             );
 
             gsap.fromTo(compresTextRef.current,
@@ -54,8 +57,9 @@ function Lounge() {
                 { display: 'none', duration: 0.1 }
             );
 
-            gsap.to(compresDivRef.current,
-                { width: '0%', duration: 1, ease: "power4.out" }
+            gsap.to(compresDivRef.current,                
+                { width: '100%', duration: 1, ease: "power4.out", },
+                { width: '0%', left: '0',right:'auto' }
             );
         };
 
@@ -74,20 +78,22 @@ function Lounge() {
     }, []);
 
     return (
-        <div ref={fourShowcaseRef} className="showcase fourShowcase bg-[url('/lounge_bg.jpg')] hidden">
+        <div ref={fourShowcaseRef} className="showcase  bg-[url('/lounge_bg.jpg')] hidden">
+            <div className='fourShowcase'> 
             <div className="flex flex-col lg:flex-row justify-center">
-                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl'>
+                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl text-white'>
                 Lounge
                 </div>
                 <div className='pt-20 lg:pt-20'>
                     <div className='compresCover'>
                         <div ref={compresDivRef} className='compresDiv'>
-                            <div className="compresImg bg-[url('/lounge_box.jpg')]">
+                            <div className="compresImgLtoR bg-[url('/lounge_box.jpg')]">
                             </div>
                         </div>
                     </div>
-                    <p className='text-3xl'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
+                    <p className='text-3xl text-white'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
                 </div>
+            </div>
             </div>
         </div>
     );

@@ -26,7 +26,7 @@ function Athleisure() {
             );
 
             gsap.fromTo(compresDivRef.current,
-                { width: '0%', right: '0', left: 'auto' },
+                {delay:0.5, width: '0%', right: '0', left: 'auto' },
                 { width: '100%', duration: 1, ease: "power4.out" }
             );
 
@@ -77,9 +77,11 @@ function Athleisure() {
     }, []);
 
     return (
-        <div ref={threeShowcaseRef} className="showcase threeShowcase bg-red-500 bg-[url('/athleisure_bg.jpg')] hidden">
+        <div ref={threeShowcaseRef} className="showcase   bg-[url('/athleisure_bg.jpg')] hidden">
+         
+         <div className='threeShowcase'> 
             <div className="flex flex-col lg:flex-row justify-center">
-                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl'>
+                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl text-white'>
                 Athleisure
                 </div>
                 <div className='pt-20 lg:pt-20'>
@@ -89,9 +91,11 @@ function Athleisure() {
                             </div>
                         </div>
                     </div>
-                    <p className='text-3xl'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
+                    <p className='text-3xl text-white'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
                 </div>
             </div>
+</div>
+
         </div>
     );
 }

@@ -20,15 +20,38 @@ function Designer() {
                 { display: 'none', duration: 0, }
             );
 
+          
+
             gsap.fromTo(oneShowcaseRef.current,
                 { display: 'none', opacity:0, duration: 0.5, },
                 { display: 'block', duration: 0.1, opacity:1 }
             );
 
+         
+
+
+    //   left to right
+            // gsap.fromTo(compresDivRef.current,
+            //     { width: '0%', left: '0',right:'auto' },
+            //     { width: '100%', duration: 1, ease: "power4.out", }
+            // );
+    
+    //   right to left
+            // gsap.fromTo(compresDivRef.current,
+            //     { width: '0%', right: '0', left: 'auto' },
+            //     { width: '100%', duration: 1, ease: "power4.out", }
+            // );
+    
+             
             gsap.fromTo(compresDivRef.current,
-                { width: '0%', right: '0', left: 'auto' },
-                { width: '100%', duration: 1, ease: "power4.out" }
+                {delay:0.5, height: '0%', bottom: '0', top: 'auto' },
+                { height: '100%', duration: 1, ease: "power4.out", }
             );
+
+
+
+
+
 
             gsap.fromTo(compresTextRef.current,
                 {opacity:0, x:-200},
@@ -54,8 +77,13 @@ function Designer() {
                 { display: 'none', duration: 0.1 }
             );
 
-            gsap.to(compresDivRef.current,
-                { width: '0%', duration: 1, ease: "power4.out" }
+            // gsap.to(compresDivRef.current,
+            //     { width: '0%', duration: 1, ease: "power4.out" }
+            // );
+
+            gsap.fromTo(compresDivRef.current,
+                { height: '100%', top: 'auto' },
+                { height: '0%', duration: 1, ease: "power4.out",  bottom: '0', }
             );
 
             gsap.fromTo(oneShowcaseRef.current,
@@ -82,20 +110,22 @@ function Designer() {
     }, []);
 
     return (
-        <div ref={oneShowcaseRef} className="showcase oneShowcase bg-red-500 bg-[url('/designer_bg.jpg')] hidden">
+        <div ref={oneShowcaseRef} className="showcase  bg-[url('/designer_bg.jpg')] hidden">
+            <div className='oneShowcase pl-20 lg:ml-0 '> 
             <div className="flex flex-col lg:flex-row justify-center">
-                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl'>
+                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl text-white'>
                     Designer
                 </div>
                 <div className='pt-20 lg:pt-20'>
                     <div className='compresCover'>
                         <div ref={compresDivRef} className='compresDiv'>
-                            <div className="compresImg bg-[url('/designer_box.jpg')]">
+                            <div className="compresImgB bg-[url('/designer_box.jpg')]">
                             </div>
                         </div>
                     </div>
-                    <p className='text-3xl'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
+                    <p className='text-3xl text-white'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
                 </div>
+            </div>
             </div>
         </div>
     );

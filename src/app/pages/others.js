@@ -15,6 +15,11 @@ function Others() {
             gsap.killTweensOf(compresDivRef.current);
             gsap.killTweensOf(compresTextRef.current);
 
+            gsap.fromTo('.coverVideo',
+                { display: 'block',  duration: 0, },
+                { display: 'none', duration: 0, }
+            );
+
             gsap.fromTo(elevenShowcaseRef.current,
                 { display: 'none', opacity:0, duration: 0.5, },
                 { display: 'block', duration: 0.5, opacity:1 }
@@ -39,6 +44,10 @@ function Others() {
             gsap.killTweensOf(compresDivRef.current);
             gsap.killTweensOf(compresTextRef.current);
 
+  gsap.fromTo('.coverVideo',
+                { display: 'none',  duration: 0, },
+                { display: 'block', duration: 0, }
+            );
 
             gsap.to(elevenShowcaseRef.current,
                 { display: 'none', duration: 0.1 }
@@ -64,9 +73,10 @@ function Others() {
     }, []);
 
     return (
-        <div ref={elevenShowcaseRef} className="showcase elevenShowcase bg-red-500 bg-[url('/others.jpg')] hidden">
+        <div ref={elevenShowcaseRef} className="showcase  bg-red-500 bg-[url('/others.jpg')] hidden">
+           <div className='elevenShowcase'> 
             <div className="flex flex-col lg:flex-row justify-center">
-                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl'>
+                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl text-white'>
                     Designer
                 </div>
                 <div className='pt-20 lg:pt-20'>
@@ -76,9 +86,11 @@ function Others() {
                             </div>
                         </div>
                     </div>
-                    <p className='text-3xl'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
+                    <p className='text-3xl text-white'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
                 </div>
             </div>
+            </div>
+
         </div>
     );
 }

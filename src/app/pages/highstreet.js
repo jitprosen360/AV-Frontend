@@ -15,6 +15,10 @@ function Highstreet() {
             gsap.killTweensOf(compresDivRef.current);
             gsap.killTweensOf(compresTextRef.current);
 
+            gsap.fromTo('.coverVideo',
+                { display: 'block',  duration: 0, },
+                { display: 'none', duration: 0, }
+            );
 
 
             gsap.fromTo(fiveShowcaseRef.current,
@@ -22,9 +26,10 @@ function Highstreet() {
                 { display: 'block', duration: 0.5, opacity:1 }
             );
 
-            gsap.fromTo(compresDivRef.current,
-                { width: '0%', right: '0', left: 'auto' },
-                { width: '100%', duration: 1, ease: "power4.out" }
+             // left to right
+             gsap.fromTo(compresDivRef.current,
+                { width: '0%', left: '0',right:'auto' },
+                { width: '100%', duration: 1, ease: "power4.out", }
             );
 
             gsap.fromTo(compresTextRef.current,
@@ -41,14 +46,19 @@ function Highstreet() {
             gsap.killTweensOf(compresDivRef.current);
             gsap.killTweensOf(compresTextRef.current);
 
+            gsap.fromTo('.coverVideo',
+                { display: 'none',  duration: 0, },
+                { display: 'block', duration: 0, }
+            );
 
 
             gsap.to(fiveShowcaseRef.current,
                 { display: 'none', duration: 0.1 }
             );
 
-            gsap.to(compresDivRef.current,
-                { width: '0%', duration: 1, ease: "power4.out" }
+            gsap.to(compresDivRef.current,                
+                { width: '100%', duration: 1, ease: "power4.out", },
+                { width: '0%', left: '0',right:'auto' }
             );
         };
 
@@ -67,21 +77,25 @@ function Highstreet() {
     }, []);
 
     return (
-        <div ref={fiveShowcaseRef} className="showcase fiveShowcase  bg-[url('/highstreet_bg.jpg')] hidden">
+        <div ref={fiveShowcaseRef} className="showcase   bg-[url('/highstreet_bg.jpg')] hidden">
+           
+           <div className='fiveShowcase'> 
             <div className="flex flex-col lg:flex-row justify-center">
-                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl'>
+                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl text-white'>
                     Designer
                 </div>
                 <div className='pt-20 lg:pt-20'>
                     <div className='compresCover'>
                         <div ref={compresDivRef} className='compresDiv'>
-                            <div className="compresImg bg-[url('/highstreet_box.jpg')]">
+                            <div className="compresImgLtoR bg-[url('/highstreet_box.jpg')]">
                             </div>
                         </div>
                     </div>
-                    <p className='text-3xl'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
+                    <p className='text-3xl text-white'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
                 </div>
             </div>
+            </div>
+
         </div>
     );
 }

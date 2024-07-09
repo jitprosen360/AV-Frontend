@@ -5,14 +5,14 @@ const Compare = () => {
     
     return(<>
     
-    <div className="compare pl-[20px] pr-[20px] md:pl-[70px] md:pr-[70px] lg:pl-[70px] lg:pr-[70px] xl:pl-[70px] xl:pr-[70px] ">
+    <div className="compare pt-[80px] pl-[20px] pr-[20px] md:pl-[70px] md:pr-[70px] lg:pl-[70px] lg:pr-[70px] xl:pl-[70px] xl:pr-[70px] ">
   
         <div className='text-[20px] text-[#00305F] gurmukhi'>How do we compare?</div>
 
         <div className='text-[50px] text-[#00305F] gurmukhi mt-[35px] w-[42%] font-medium leading-tight'>We measure our value in customers feedback</div>
 
 
-            <div class="flex flex-row">
+            <div class="flex flex-row pt-[80px]">
                 
                 <div class="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4">
                 <div className='alllist'>
@@ -34,7 +34,7 @@ const Compare = () => {
                 <div class="bg-secondgrid sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4">
                 <div className='alllist '>
                 <ul class=" list-outside text-center justify-center list-none sm:list-inside font-medium text-[16px] md:text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px]  text-black roboto">
-                        <li className='flex items-center p-[10px] md:pl-[105px] md:pr-[105px] lg:pl-[105px] lg:pr-[105px] xl:pl-[105px] xl:pr-[105px] 2xl:pl-[105px] 2xl:pr-[105px] flex items-center justify-center'>  <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className='flex items-center p-[10px] md:pl-[105px] md:pr-[105px] lg:pl-[105px] lg:pr-[105px] xl:pl-[105px] xl:pr-[105px] 2xl:pl-[105px] 2xl:pr-[105px] justify-center'>  <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M59.7447 0.0573862C59.9773 0.181851 60.0674 0.473549 59.946 0.710417L40.7334 38.2353L40.7097 38.2693C40.3233 38.7978 39.9078 39.0643 39.4734 39.0643C39.4017 39.0643 39.3304 39.0594 39.2538 39.0451C38.1789 38.8247 37.6631 36.9621 37.5632 36.5525C37.5606 36.541 37.5579 36.5328 37.5541 36.5213L31.7366 18.7469C31.6535 18.4925 31.789 18.2178 32.0393 18.1333L32.0474 18.1306C32.2946 18.0472 32.5617 18.1805 32.648 18.43L39.0833 37.0416C39.2214 37.4408 39.7611 37.4813 39.9553 37.1074L59.0982 0.258615C59.2213 0.0222955 59.5094 -0.0687237 59.742 0.0557414L59.7447 0.0573862Z" fill="#EE2C43"/>
 <path d="M36.766 38.5287L36.6557 38.1839L25.1557 2.50235C25.047 2.16453 24.7302 1.93555 24.3727 1.93555H11.9984C11.6376 1.93555 11.3191 2.16884 11.2132 2.51043L3.24473 28.1426L1.59932 33.4857L0.545663 36.8617L0.00280606 38.6095C-0.0200168 38.7383 0.103879 38.7033 0.103879 38.7033L9.82477 38.7097C10.0753 38.7097 10.0525 38.581 10.0525 38.581L11.3599 34.0503L12.0853 31.5865C12.1147 31.4512 12.238 31.4895 12.238 31.4895H23.6989C23.8483 31.4669 23.8711 31.5671 23.8711 31.5671L23.9429 31.8058L26.011 38.5713C26.0534 38.7485 26.2844 38.7033 26.2844 38.7033H36.659C36.8182 38.7033 36.766 38.5287 36.766 38.5287ZM21.9192 23.7439H14.0068C13.7497 23.7439 13.8573 23.5182 13.8573 23.5182L17.6204 8.80074H18.0334L21.9687 23.5182C22.0366 23.773 21.9192 23.7439 21.9192 23.7439Z" fill="#0B4E90"/>
 </svg></li>

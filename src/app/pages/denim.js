@@ -15,6 +15,10 @@ function Denim() {
             gsap.killTweensOf(compresDivRef.current);
             gsap.killTweensOf(compresTextRef.current);
 
+            gsap.fromTo('.coverVideo',
+                { display: 'block',  duration: 0, },
+                { display: 'none', duration: 0, }
+            );
 
             gsap.fromTo(eightShowcaseRef.current,
                 { display: 'none', opacity:0, duration: 0.5, },
@@ -39,6 +43,11 @@ function Denim() {
             gsap.killTweensOf(eightShowcaseRef.current);
             gsap.killTweensOf(compresDivRef.current);
             gsap.killTweensOf(compresTextRef.current);
+
+            gsap.fromTo('.coverVideo',
+                { display: 'none',  duration: 0, },
+                { display: 'block', duration: 0, }
+            );
 
 
             gsap.to(eightShowcaseRef.current,
@@ -65,10 +74,12 @@ function Denim() {
     }, []);
 
     return (
-        <div ref={eightShowcaseRef} className="showcase eightShowcase bg-red-500 bg-[url('/denim_bg.jpg')] hidden">
+        <div ref={eightShowcaseRef} className="showcase   bg-[url('/denim_bg.jpg')] hidden">
+            
+            <div className='eightShowcase'> 
             <div className="flex flex-col lg:flex-row justify-center">
-                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl'>
-                    Designer
+                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl text-white'>
+                Denim
                 </div>
                 <div className='pt-20 lg:pt-20'>
                     <div className='compresCover'>
@@ -77,9 +88,11 @@ function Denim() {
                             </div>
                         </div>
                     </div>
-                    <p className='text-3xl'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
+                    <p className='text-3xl text-white'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
                 </div>
             </div>
+            </div>
+
         </div>
     );
 }

@@ -15,6 +15,10 @@ function Athletic() {
             gsap.killTweensOf(compresDivRef.current);
             gsap.killTweensOf(compresTextRef.current);
 
+            gsap.fromTo('.coverVideo',
+                { display: 'block',  duration: 0, },
+                { display: 'none', duration: 0, }
+            );
 
             gsap.fromTo(sixShowcaseRef.current,
                 { display: 'none', opacity:0, duration: 0.5, },
@@ -22,8 +26,8 @@ function Athletic() {
             );
 
             gsap.fromTo(compresDivRef.current,
-                { width: '0%', right: '0', left: 'auto' },
-                { width: '100%', duration: 1, ease: "power4.out" }
+                {delay:0.5, height: '0%', bottom: '0', top: 'auto' },
+                { height: '100%', duration: 1, ease: "power4.out", }
             );
 
             gsap.fromTo(compresTextRef.current,
@@ -41,12 +45,19 @@ function Athletic() {
             gsap.killTweensOf(compresTextRef.current);
 
 
+            gsap.fromTo('.coverVideo',
+                { display: 'none',  duration: 0, },
+                { display: 'block', duration: 0, }
+            );
+
+            
             gsap.to(sixShowcaseRef.current,
                 { display: 'none', duration: 0.1 }
             );
 
-            gsap.to(compresDivRef.current,
-                { width: '0%', duration: 1, ease: "power4.out" }
+            gsap.fromTo(compresDivRef.current,
+                { height: '100%', top: 'auto' },
+                { height: '0%', duration: 1, ease: "power4.out",  bottom: '0', }
             );
 
             gsap.fromTo(sixShowcaseRef.current,
@@ -71,20 +82,22 @@ function Athletic() {
     }, []);
 
     return (
-        <div ref={sixShowcaseRef} className="showcase sixShowcase bg-red-500 bg-[url('/athletics_bg.jpg')] hidden">
+        <div ref={sixShowcaseRef} className="showcase bg-[url('/athletics_bg.jpg')] hidden">          
+          <div className='sixShowcase'> 
             <div className="flex flex-col lg:flex-row justify-center">
-                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl'>
-                    Designer
+                <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl text-white'>
+                Athletics
                 </div>
                 <div className='pt-20 lg:pt-20'>
                     <div className='compresCover'>
                         <div ref={compresDivRef} className='compresDiv'>
-                            <div className="compresImg bg-[url('/athletics_box.jpg')]">
+                            <div className="compresImgB bg-[url('/athletics_box.jpg')]">
                             </div>
                         </div>
                     </div>
-                    <p className='text-3xl'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
+                    <p className='text-3xl text-white'  ref={compresTextRef} >Build a quality brand <br /> worth your effort</p>
                 </div>
+            </div>
             </div>
         </div>
     );

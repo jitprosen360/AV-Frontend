@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100..800&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100..800&family=Inter:wght@100..900&display=swap');
 
 /*
@@ -1132,6 +1134,10 @@ video {
   padding-left: 2.5rem;
 }
 
+.pl-20{
+  padding-left: 5rem;
+}
+
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -1214,6 +1220,10 @@ video {
 
 .pt-\[45px\]{
   padding-top: 45px;
+}
+
+.pt-\[80px\]{
+  padding-top: 80px;
 }
 
 .text-left{
@@ -1526,16 +1536,16 @@ body a:hover .custom-cursor .inner-dot,
 }
 
 .leftPanel a {
+  color:#FFF;
   font-size: 14px;
   border-radius: 50px;
   padding: 6px 18px 7px;
-  background-color: rgba(55, 50, 70, 0.500);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  background-color: rgba(55, 50, 70, 0.703);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border: 1px solid rgba(168, 168, 168, 0.034);
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: #fff;
 }
 
 .leftPanel a:hover {
@@ -1566,6 +1576,24 @@ nav {
   background-size: cover;
 }
 
+.oneShowcase,
+  .twoShowcase,
+  .threeShowcase,
+  .fourShowcase,
+  .fiveShowcase,
+  .sixShowcase,
+  .sevenShowcase,
+  .eightShowcase,
+  .nineShowcase,
+  .tenShowcase,
+  .elevenShowcase {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.607);
+}
+
 .cornerShowcase {
   position: absolute;
   width: calc(32vw - 17px);
@@ -1589,6 +1617,7 @@ nav {
   width: 400px;
   height: 500px;
   position: relative;
+  border-radius: 7px;
 }
 
 .compresDiv {
@@ -1596,6 +1625,7 @@ nav {
   position: absolute;
   width: 400px;
   height: 500px;
+  border-radius: 7px;
 }
 
 .compresImg {
@@ -1604,6 +1634,28 @@ nav {
   background-position: center center;
   position: absolute;
   right: 0;
+  border-radius: 7px;
+  background-color: #FF6D3A;
+}
+
+.compresImgLtoR {
+  width: 400px;
+  height: 500px;
+  background-position: center center;
+  position: absolute;
+  left: 0;
+  border-radius: 7px;
+  background-color: #FF6D3A;
+}
+
+.compresImgB {
+  width: 400px;
+  height: 500px;
+  background-position: center center;
+  position: absolute;
+  bottom:0;
+  border-radius: 7px;
+  background-color: #FF6D3A;
 }
 
 .ScrollSection {
@@ -1618,12 +1670,12 @@ nav {
   font-family: "Archivo", sans-serif;
 }
 
-.videoFix{
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
+/* .test {
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    overflow: hidden;
+  } */
 
 .leftPanel2 {
   height: 100vh;
@@ -1713,11 +1765,81 @@ nav {
   background-color: black;
 }
 
-.KeayFeatureSection p {
-  font-family: "Anek Gurmukhi", sans-serif;
-  color: #060606;
-  font-weight: 400;
-}
+/* 
+
+
+  .containerFeature {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px
+       
+  }
+
+  .flexDiv {
+    flex-grow: 1;
+    flex-basis: 100%;
+    transition: flex-grow 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .flexC {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .cutout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFE700;
+    display: flex;
+    bottom: 0;
+  }
+
+
+  .flex-1 {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .headingFeature {
+    font-size: 1.5rem;
+    z-index: 1;
+    width: 200px; 
+
+  }
+
+  .contentFeature {
+    width: 250px;
+    margin-right: 15px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  @media (min-width: 768px) {
+    .flexDiv {
+      flex-basis: 0;
+    }
+
+    .contentFeature {
+      display: none;
+    }
+  }
+ */
+
+/* prosenjit css */
 
 .CardDeesign {
   border-radius: 20px;
@@ -1759,34 +1881,10 @@ nav {
   font-weight: 500;
 }
 
-.lineKey{
+.lineKey {
   height: 2px;
   background-color: rgb(90, 90, 90);
   margin: 10px 15px;
-}
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 .gurmukhi {
@@ -1810,25 +1908,8 @@ body {
   width: 70%;
 }
 
-.w-90{
-  width: 88%;
-}
-
-.h-250{
-  height: 53rem;
-}
-
 .h-40{
   height: 40rem;
-}
-
-.w-50{
-  width: 22rem;
-}
-
-.box-div {
-  width: 100%;
-  margin: 0 auto;
 }
 
 .bg-secondgrid {
@@ -1890,6 +1971,29 @@ body {
 .size-2{
   width: 1rem;
   height: 1rem;
+}
+
+/* new css for fix and responsive */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 .hover\:text-green-600:hover{
@@ -2062,37 +2166,36 @@ body {
     right: 0;
   }
 
+  .md\:revelImg img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
   .md\:revelImg video {
     position: absolute;
     bottom: 0;
     right: 0;
   }
 
-  .md\:videoFixL{
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: auto;
-    width: auto;
-  }
-
   .md\:cutout {
     position: absolute;
-    width: 550px;
-    z-index: -20;
+    width: 540px;
+    z-index: -10;
+    height: 100%;
     background-color: #fff;
-    padding-right: 25px;
-    text-align: justify;
-    border-left: 1px solid #8571FD;
-    color: #000;
-    padding-bottom: 50px;
   }
 
-  .md\:lineKeyLG{
+  .md\:lineKeyLG {
     display: none;
   }
 }
 
 @media (min-width: 1024px){
+  .lg\:ml-0{
+    margin-left: 0px;
+  }
+
   .lg\:h-80{
     height: 20rem;
   }
@@ -2191,32 +2294,27 @@ body {
     right: 0;
   }
 
+  .lg\:revelImg img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
   .lg\:revelImg video {
     position: absolute;
     bottom: 0;
     right: 0;
   }
 
-  .lg\:videoFixL{
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: auto;
-    width: auto;
-  }
-
   .lg\:cutout {
     position: absolute;
-    width: 550px;
-    z-index: -20;
+    width: 540px;
+    z-index: -10;
+    height: 100%;
     background-color: #fff;
-    padding-right: 25px;
-    text-align: justify;
-    border-left: 1px solid #8571FD;
-    color: #000;
-    padding-bottom: 50px;
   }
 
-  .lg\:lineKeyLG{
+  .lg\:lineKeyLG {
     display: none;
   }
 }
