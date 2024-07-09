@@ -101,7 +101,7 @@ export default function Home() {
           </nav>
 
           <div className="leftPanel absolute inset-0 flex items-center w-64 h-full z-40">
-            <div className="pl-3 mt-[200px]">
+            <div className="pl-3 ">
               <div className="one left_nav">
                 <a>Designer</a>
               </div>
@@ -232,7 +232,7 @@ export default function Home() {
             <Outdoors />
             <Others />
           </div>
-          <div className="ScrollSection bg-white pt-[40px] pb-5">
+          <div className="ScrollSection bg-white pt-5 pb-5">
             <LogoScroller />
             <WhatWeDo />
           </div>

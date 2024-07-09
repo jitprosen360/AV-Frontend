@@ -660,10 +660,6 @@ video {
   margin-right: 1rem;
 }
 
-.mt-2{
-  margin-top: 0.5rem;
-}
-
 .mt-20{
   margin-top: 5rem;
 }
@@ -678,10 +674,6 @@ video {
 
 .mt-\[150px\]{
   margin-top: 150px;
-}
-
-.mt-\[200px\]{
-  margin-top: 200px;
 }
 
 .mt-\[35px\]{
@@ -735,10 +727,6 @@ video {
 
 .h-8{
   height: 2rem;
-}
-
-.h-\[100vh\]{
-  height: 100vh;
 }
 
 .h-\[120px\]{
@@ -966,11 +954,6 @@ video {
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
-.bg-indigo-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
-}
-
 .bg-orange-700{
   --tw-bg-opacity: 1;
   background-color: rgb(194 65 12 / var(--tw-bg-opacity));
@@ -1000,10 +983,6 @@ video {
 
 .bg-\[url\(\'\/athletics_box\.jpg\'\)\]{
   background-image: url('/athletics_box.jpg');
-}
-
-.bg-\[url\(\'\/box1\.svg\'\)\]{
-  background-image: url('/box1.svg');
 }
 
 .bg-\[url\(\'\/casual_bg\.jpg\'\)\]{
@@ -1094,11 +1073,6 @@ video {
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .px-7{
@@ -1214,6 +1188,10 @@ video {
   padding-top: 6rem;
 }
 
+.pt-5{
+  padding-top: 1.25rem;
+}
+
 .pt-\[150px\]{
   padding-top: 150px;
 }
@@ -1232,10 +1210,6 @@ video {
 
 .pt-\[35px\]{
   padding-top: 35px;
-}
-
-.pt-\[40px\]{
-  padding-top: 40px;
 }
 
 .pt-\[45px\]{
@@ -1649,27 +1623,6 @@ nav {
      object-fit: cover;
   height: 100%;
   width: 100%;
-}
-
-.small {
-  position: absolute;
-  width: 33vw;
-  height: 82vh;
-  margin: auto;
-  left: 31.8vw;
-  top: 8.5%;
-  overflow: hidden;
-  transition: width 2s, height 2s;
-  border-radius: 8px;
-  z-index: 20;
-}
-
-.big {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  left: -98%;
-  top: 0;
 }
 
 .leftPanel2 {
