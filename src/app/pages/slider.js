@@ -3,15 +3,16 @@ import Card from './Card';
 import { gsap } from 'gsap';
 
 const cards = [
-  { cardNo: '01', cardTitle: 'DESIGN', bgCardColor: 'bg-red-500', bgColor: 'bg-red-500', textColor: 'text-black' , videoSource: '/artwork_simple.mp4' ,content : " Using 3D design software, our designer can create a detailed digital version of your concept in real time,including how it looks on a person, and make modifications as needed."},
-  { cardNo: '02', cardTitle: 'TECHPAC', bgCardColor: 'bg-orange-700', bgColor: 'bg-orange-700', textColor: 'text-black' ,videoSource: '/artwork_simple.mp4', content : " Using 3D design software, our designer can create a detailed digital version of your concept in real time,including how it looks on a person, and make modifications as needed."},
-  { cardNo: '03', cardTitle: 'FABRIC', bgCardColor: 'bg-green-400', bgColor: 'bg-green-400', textColor: 'text-black' ,videoSource: '/artwork_simple.mp4', content : " Using 3D design software, our designer can create a detailed digital version of your concept in real time,including how it looks on a person, and make modifications as needed."},
-  { cardNo: '04', cardTitle: 'PROTOTYPE', bgCardColor: 'bg-gray-700', bgColor: 'bg-gray-700', textColor: 'text-black' , videoSource: '/artwork_simple.mp4', content : " Using 3D design software, our designer can create a detailed digital version of your concept in real time,including how it looks on a person, and make modifications as needed."},
-  { cardNo: '05', cardTitle: 'PRODUCTION', bgCardColor: 'bg-blue-600', bgColor: 'bg-blue-600', textColor: 'text-black', videoSource: '/artwork_simple.mp4' , content : " Using 3D design software, our designer can create a detailed digital version of your concept in real time,including how it looks on a person, and make modifications as needed."},
+  { cardNo: '01', cardTitle: 'DESIGN', bgCardColor: 'bg-red-500', textColor: 'text-black', videoSource: '/artwork_simple.mp4', content: "Using 3D design software, our designer can create a detailed digital version of your concept in real time,including how it looks on a person, and make modifications as needed." },
+  { cardNo: '02', cardTitle: 'TECHPAC', bgCardColor: 'bg-orange-700', textColor: 'text-black', videoSource: '/artwork_simple.mp4', content: "Using 3D design software, our designer can create a detailed digital version of your concept in real time,including how it looks on a person, and make modifications as needed." },
+  { cardNo: '03', cardTitle: 'FABRIC', bgCardColor: 'bg-green-400', textColor: 'text-black', videoSource: '/artwork_simple.mp4', content: "Using 3D design software, our designer can create a detailed digital version of your concept in real time,including how it looks on a person, and make modifications as needed." },
+  { cardNo: '04', cardTitle: 'PROTOTYPE', bgCardColor: 'bg-gray-700', textColor: 'text-black', videoSource: '/artwork_simple.mp4', content: "Using 3D design software, our designer can create a detailed digital version of your concept in real time,including how it looks on a person, and make modifications as needed." },
+  { cardNo: '05', cardTitle: 'PRODUCTION', bgCardColor: 'bg-blue-600', textColor: 'text-black', videoSource: '/artwork_simple.mp4', content: "Using 3D design software, our designer can create a detailed digital version of your concept in real time,including how it looks on a person, and make modifications as needed." },
 ];
 
 const Slider = () => {
   const [selected, setSelected] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const cardRefs = useRef([]);
 
   useEffect(() => {
@@ -21,6 +22,14 @@ const Slider = () => {
         width: index === 0 ? '70%' : '5.5rem',
       });
     });
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   useEffect(() => {
@@ -61,7 +70,7 @@ const Slider = () => {
         Our 5 steps end-to-end process created with emerging brands in mind
       </div>
       <div className='hidden md:block'>
-        <div className='h-screen flex items-center justify-center '>
+        <div className='h-screen flex items-center justify-center'>
           {cards.map((card, key) => (
             <div
               key={key}
@@ -69,8 +78,7 @@ const Slider = () => {
               className={`${key === 0 ? 'w-70' : 'w-22'} cursor-pointer ml-custom relative `}
               onClick={() => handleClick(key)}
             >
-              <Card card={card} selected={selected === key} />
-         
+              <Card card={card} selected={selected === key} isMobile={isMobile} />
             </div>
           ))}
         </div>
@@ -81,12 +89,10 @@ const Slider = () => {
           {cards.map((card, key) => (
             <div
               key={key}
-              
               className={`w-full cursor-pointer items-center justify-center relative`}
               onClick={() => handleClick(key)}
             >
-              <Card card={card} selected={selected === key} />
-       
+              <Card card={card} selected={selected === key} isMobile={isMobile} />
             </div>
           ))}
         </div>
