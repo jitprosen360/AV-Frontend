@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 
-const Card = ({ card, selected, isMobile }) => {
+const Card = ({ card, selected, isMobile , index  }) => {
   const cardRef = useRef(null);
   const videoRef = useRef(null);
   const textRef = useRef(null);
@@ -34,8 +34,8 @@ const Card = ({ card, selected, isMobile }) => {
   }, []);
 
   return (
-    <div className='relative overflow-hidden'>
-      <div ref={cardRef} className={`md:h-screen rounded-xl ${selected ? 'h-40' : 'h-12'} ${card.bgCardColor}`}>
+    <div className={`relative overflow-hidden md:border-tr-white rounded-md ${index === 0 ? 'md:border-solid md:border-l' : ''}`}>
+      <div ref={cardRef} className={`md:h-screen rounded-md ${selected ? 'h-40' : 'h-12'} ${card.bgCardColor}`}>
         <div className="flex">
           {/* Right Side (cardTitle) */}
           <div className={`absolute ${card.textColor} ${isMobile ? 'w-1/2 left-0 mt-[35px] text-left pl-[30px]' : 'mt-[100px]'}`}>
@@ -52,7 +52,7 @@ const Card = ({ card, selected, isMobile }) => {
             </video>
           </div>
           <div ref={textRef} className={`flex items-center ${isMobile ? 'w-full h-[300px] text-center' : 'w-[40%] h-screen'} p-4 overflow-hidden `}>
-            <p className="text-white overflow-hidden h-[120px] w-[300px] pl-[25px]">
+            <p className="text-[#00305F] text-[20px] overflow-hidden h-[120px] w-[300px] pl-[25px]">
               {card.content}
             </p>
           </div>

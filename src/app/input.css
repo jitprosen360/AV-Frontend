@@ -680,15 +680,15 @@ body {
   }
   .main-yell-bg {
     background-color : #FBFD5D;
-    height:1550px;
+    height:1450px;
   }
   .ml-custom{
-    margin-left: -.5rem;
+    margin-left: -20px;
   }
   
   
   .w-22{
-    width: 5.5rem;
+    width: 6.5rem;
   }
   .w-70{
     width: 70%;
@@ -760,7 +760,23 @@ body {
   }
 
   .border-r-customPurple { border-left: 2px solid #8571FD;}
+  .border-tr-white {
+    border-top: 4px solid #FFF;
+    border-right: 4px solid #FFF;
+    border-bottom: 4px solid #FFF;
+  }
+
+  .border-l {
+    border-left: 4px solid #FFF;
+    border-bottom: 4px solid #FFF;
+  }
   
+  .card-bg-1 { background-color: #F6F6F6 }
+  .card-bg-2 { background-color: #FFEBEB }
+  .card-bg-3 { background-color: #ffffff  }
+  .card-bg-4 { background-color: #CFFEFB }
+  .card-bg-5 { background-color: #EAAEFF }
+
   /* new css for fix and responsive */
 
 
