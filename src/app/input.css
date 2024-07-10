@@ -599,7 +599,7 @@ body {
 
   .cutout {
     position: absolute;
-    width: 540px;
+    width: 38%;
     z-index: -10;
     height: 100%;
     background-color: #fff;
@@ -683,7 +683,7 @@ body {
     height:1550px;
   }
   .ml-custom{
-    margin-left: -.8rem;
+    margin-left: -.5rem;
   }
   
   
@@ -758,6 +758,8 @@ body {
     width: 1rem;
     height: 1rem;
   }
+
+  .border-r-customPurple { border-left: 2px solid #8571FD;}
   
   /* new css for fix and responsive */
 

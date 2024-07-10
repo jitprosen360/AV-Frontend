@@ -682,6 +682,10 @@ video {
   margin-top: 35px;
 }
 
+.mt-\[90px\]{
+  margin-top: 90px;
+}
+
 .block{
   display: block;
 }
@@ -781,6 +785,10 @@ video {
 
 .w-8{
   width: 2rem;
+}
+
+.w-\[100\%\]{
+  width: 100%;
 }
 
 .w-\[14px\]{
@@ -934,6 +942,10 @@ video {
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.border-t-2{
+  border-top-width: 2px;
 }
 
 .bg-black{
@@ -1114,8 +1126,8 @@ video {
   padding-bottom: 10rem;
 }
 
-.pb-5{
-  padding-bottom: 1.25rem;
+.pb-\[100px\]{
+  padding-bottom: 100px;
 }
 
 .pb-\[120px\]{
@@ -1130,8 +1142,16 @@ video {
   padding-bottom: 190px;
 }
 
-.pl-10{
-  padding-left: 2.5rem;
+.pb-\[20px\]{
+  padding-bottom: 20px;
+}
+
+.pb-\[30px\]{
+  padding-bottom: 30px;
+}
+
+.pb-\[85px\]{
+  padding-bottom: 85px;
 }
 
 .pl-20{
@@ -1160,6 +1180,10 @@ video {
 
 .pl-\[30px\]{
   padding-left: 30px;
+}
+
+.pl-\[40px\]{
+  padding-left: 40px;
 }
 
 .pl-\[50px\]{
@@ -1198,6 +1222,10 @@ video {
   padding-top: 1.25rem;
 }
 
+.pt-\[100px\]{
+  padding-top: 100px;
+}
+
 .pt-\[150px\]{
   padding-top: 150px;
 }
@@ -1222,6 +1250,10 @@ video {
   padding-top: 45px;
 }
 
+.pt-\[70px\]{
+  padding-top: 70px;
+}
+
 .pt-\[80px\]{
   padding-top: 80px;
 }
@@ -1238,19 +1270,9 @@ video {
   text-align: right;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-5xl{
@@ -1281,6 +1303,14 @@ video {
 
 .text-\[36px\]{
   font-size: 36px;
+}
+
+.text-\[39px\]{
+  font-size: 39px;
+}
+
+.text-\[45px\]{
+  font-size: 45px;
 }
 
 .text-\[50px\]{
@@ -1329,6 +1359,10 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.leading-none{
+  line-height: 1;
 }
 
 .leading-tight{
@@ -1662,10 +1696,6 @@ nav {
   font-family: "Sansita", sans-serif;
 }
 
-.bordr {
-  border: 1px solid #CECECE;
-}
-
 .whtdo {
   font-family: "Archivo", sans-serif;
 }
@@ -1897,7 +1927,7 @@ nav {
 }
 
 .ml-custom{
-  margin-left: -.8rem;
+  margin-left: -.5rem;
 }
 
 .w-22{
@@ -1973,6 +2003,10 @@ nav {
   height: 1rem;
 }
 
+.border-r-customPurple {
+  border-left: 2px solid #8571FD;
+}
+
 /* new css for fix and responsive */
 
 :root {
@@ -2020,10 +2054,6 @@ body {
     height: 20rem;
   }
 
-  .sm\:h-96{
-    height: 24rem;
-  }
-
   .sm\:w-1\/4{
     width: 25%;
   }
@@ -2054,9 +2084,12 @@ body {
     padding-bottom: 1rem;
   }
 
-  .sm\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .sm\:pt-\[100px\]{
+    padding-top: 100px;
+  }
+
+  .sm\:text-\[40px\]{
+    font-size: 40px;
   }
 }
 
@@ -2071,10 +2104,6 @@ body {
 
   .md\:h-80{
     height: 20rem;
-  }
-
-  .md\:h-96{
-    height: 24rem;
   }
 
   .md\:h-screen{
@@ -2115,6 +2144,14 @@ body {
     padding-right: 0px;
   }
 
+  .md\:pb-\[150px\]{
+    padding-bottom: 150px;
+  }
+
+  .md\:pb-\[200px\]{
+    padding-bottom: 200px;
+  }
+
   .md\:pl-\[105px\]{
     padding-left: 105px;
   }
@@ -2131,9 +2168,12 @@ body {
     padding-right: 70px;
   }
 
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .md\:pt-\[175px\]{
+    padding-top: 175px;
+  }
+
+  .md\:pt-\[200px\]{
+    padding-top: 200px;
   }
 
   .md\:text-\[18px\]{
@@ -2142,6 +2182,10 @@ body {
 
   .md\:text-\[55px\]{
     font-size: 55px;
+  }
+
+  .md\:text-\[74px\]{
+    font-size: 74px;
   }
 
   .md\:revelCover {
@@ -2180,7 +2224,7 @@ body {
 
   .md\:cutout {
     position: absolute;
-    width: 540px;
+    width: 38%;
     z-index: -10;
     height: 100%;
     background-color: #fff;
@@ -2229,21 +2273,20 @@ body {
     padding-right: 0px;
   }
 
-  .lg\:py-36{
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+  .lg\:pb-\[150px\]{
+    padding-bottom: 150px;
   }
 
   .lg\:pl-10{
     padding-left: 2.5rem;
   }
 
-  .lg\:pl-6{
-    padding-left: 1.5rem;
-  }
-
   .lg\:pl-\[105px\]{
     padding-left: 105px;
+  }
+
+  .lg\:pl-\[40px\]{
+    padding-left: 40px;
   }
 
   .lg\:pl-\[70px\]{
@@ -2270,13 +2313,20 @@ body {
     padding-top: 6rem;
   }
 
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
+  .lg\:pt-\[175px\]{
+    padding-top: 175px;
   }
 
   .lg\:text-\[18px\]{
     font-size: 18px;
+  }
+
+  .lg\:text-\[45px\]{
+    font-size: 45px;
+  }
+
+  .lg\:text-\[74px\]{
+    font-size: 74px;
   }
 
   .lg\:revelDiv {
@@ -2308,7 +2358,7 @@ body {
 
   .lg\:cutout {
     position: absolute;
-    width: 540px;
+    width: 38%;
     z-index: -10;
     height: 100%;
     background-color: #fff;
@@ -2342,11 +2392,6 @@ body {
 
   .xl\:pr-\[70px\]{
     padding-right: 70px;
-  }
-
-  .xl\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .xl\:text-\[18px\]{

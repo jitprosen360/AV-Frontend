@@ -26,25 +26,26 @@ const KeyFeature = () => {
   }, []);
 
   return (
-    <div className='KeayFeatureSection'> 
-      <p className='text-3xl pl-6 py-10 lg:text-5xl lg:pl-6 lg:py-36 lg:w-1/2'>
+    <div className='KeayFeatureSection  text-black pb-[20px]'> 
+    <div className='bg-white'>
+      <p className='text-3xl pl-6 py-10 lg:text-[45px] lg:pl-[40px] lg:pt-[175px] lg:pb-[150px] md:pt-[175px] md:pb-[150px] lg:w-1/2 leading-tight gurmukhi'>
         After helping hundreds of brands, there are a few key things we&apos;ve learned are needed to do the best work
       </p>
-
-      <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row">
+      </div>
+      <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row ">
         {keyFeatures.map((feature, index) => (
           <div ref={el => divs.current[index] = el} key={feature.id} className="grow lg:h-80 md:h-80 sm:h-80">
             <div className="md:cutout lg:cutout lg:border-none md:border-none">
               <div className="flex flex-col items-stretch sm:grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 h-60">
-                <div className="grow flex items-stretch">
+                <div className="grow flex items-stretch w-[100%] border-r-customPurple">
                   <div className="self-start pl-6">
                     <div className='absolute'> 
                       {`0${feature.id}`}
                     </div>
                   </div>
-                  <div className="self-end text-left text-xl">{feature.title}</div>
+                  <div className="self-end text-left text-xl text-black">{feature.title}</div>
                 </div>
-                <div className="self-end px-7 lg:px-0 md:px-0 sm:px-0">{feature.content}</div>
+                <div className="self-end px-7 lg:px-0 md:px-0 sm:px-0 text-black">{feature.content}</div>
               </div>
             </div>
             <div className='lineKey lg:lineKeyLG md:lineKeyLG'></div>

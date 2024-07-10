@@ -232,7 +232,7 @@ export default function Home() {
             <Outdoors />
             <Others />
           </div>
-          <div className="ScrollSection bg-white pt-5 pb-5">
+          <div className="ScrollSection bg-white pt-5 ">
             <LogoScroller />
             <WhatWeDo />
           </div>

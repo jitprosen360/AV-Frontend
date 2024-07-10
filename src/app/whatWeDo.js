@@ -39,10 +39,10 @@ function WhatWeDo() {
 
   return (
     <>
-      <p className="flex justify-center items-center text-center text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-60 sm:h-96 md:h-96">
+      <p className="flex justify-center items-center text-center font-medium text-black text-3xl leading-tight sm:text-[40px] md:text-[74px] lg:text-[74px] pt-[100px] pb-[100px] sm:pt-[100px] md:pt-[200px] md:pb-[200px] gurmukhi">
         Odds are you’ve worn a<br /> product we’ve made
       </p>
-      <p className='pl-10 pb-10 text-4xl text-black	whtdo'>What we do</p>
+      <p className='pl-[40px] pb-[85px] text-[45px] font-medium text-black	whtdo'>What we do</p>
       {rowsData.map((row, index) => (
         <WhatWeRow
           key={index}

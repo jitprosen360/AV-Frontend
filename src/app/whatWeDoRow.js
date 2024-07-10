@@ -15,7 +15,7 @@ function WhatWeRow({ rowClass, videoSrc, title, description }) {
       gsap.killTweensOf(heightsDivRef.current);
 
       gsap.fromTo(heightsDivRef.current,
-        { height: '260px',  backgroundColor:'#fff' },
+        { height: '300px',  backgroundColor:'#fff' },
         { height: '350px', duration: 0.7, ease: "power4.out", backgroundColor:'#F6FAFF' }
       );
       gsap.fromTo(compresDivRef.current,
@@ -30,7 +30,7 @@ function WhatWeRow({ rowClass, videoSrc, title, description }) {
 
       gsap.fromTo(heightsDivRef.current,
         { height: '350px', duration: 0.7, ease: "power4.out", backgroundColor:'#F6FAFF' },
-        { height: '260px', backgroundColor:'#fff'  }
+        { height: '300px', backgroundColor:'#fff'  }
       );
       gsap.to(compresDivRef.current,
         { height: '0%', duration: 0.7, ease: "power4.out" }
@@ -77,9 +77,9 @@ function WhatWeRow({ rowClass, videoSrc, title, description }) {
 
 <> 
 
-    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 whtdo bordr py-12 ${rowClass}`} ref={heightsDivRef}>
+    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 whtdo border-t-2 py-12  ${rowClass}`} ref={heightsDivRef}>
       <div className=" flex flex-col justify-end">
-        <p className="text-4xl text-black font-light pl-4 lg:pl-10	">{title}</p>
+        <p className="text-[39px] text-black font-light pl-4 lg:pl-10	leading-none pb-[30px] pt-[70px]">{title}</p>
       </div>
       <div className="p-4 flex flex-col justify-end ">
         <div className='md:revelCover'>

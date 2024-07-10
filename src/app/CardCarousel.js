@@ -60,7 +60,7 @@ const CardCarousel = () => {
   ];
 
   return (
-    <div className="container mx-auto px-12 pb-40 clientsays">
+    <div className=" mx-auto px-12 pb-40 clientsays">
 
 <p className=' text-5xl py-36 lg:w-96 mx-auto'>What Our Clients <br/> Say About Us</p>
 

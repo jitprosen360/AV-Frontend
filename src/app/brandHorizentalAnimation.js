@@ -49,7 +49,7 @@ export default function LogoScroller() {
   }, []);
 
   return (
-    <div className="overflow-hidden whitespace-nowrap bg-white">
+    <div className="overflow-hidden whitespace-nowrap bg-white mt-[90px]">
       <div ref={scrollerRef} className="flex">
         {logos.concat(logos).map((logo, index) => (
           <img
