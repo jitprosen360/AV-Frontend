@@ -1869,13 +1869,14 @@ nav {
   fill: #FFAC1A;
 }
 
-.faq {
+.faq .container{
   width: 80%;
   margin: 0 auto;
 }
 
 .faq ul li {
   border-bottom: 1px solid #000;
+  color: #000;
 }
 
 .help {
@@ -1904,6 +1905,10 @@ nav {
 .KeayFeatureSection {
   background-color: #fff;
   color: #000;
+}
+
+.sldr_brdr{
+  border: 5px solid #fff;
 }
 
 :root {

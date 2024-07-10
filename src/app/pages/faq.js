@@ -22,7 +22,9 @@ const Faq = () => {
   };
 
   return (
-    <div className='faq pt-[190px] pb-[190px]'>
+    <div className='faq pt-[190px] pb-[190px] bg-white'>
+
+<div className='container'> 
       <div className='text-[50px] text-black text-center font-extrabold'>FAQ</div>
       <p className='text-[20px] text-black text-center font-bold'>Learn more!</p>
 
@@ -84,6 +86,8 @@ const Faq = () => {
 
       <div className='text-[36px] text-black text-center font-bold pt-24 gurmukhi'>See more FAQs</div>
 
+
+      </div>
     </div>
   );
 };

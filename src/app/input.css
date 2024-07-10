@@ -676,13 +676,14 @@ body {
     fill: #FFAC1A;
   }
 
-  .faq {
+  .faq .container{
     width: 80%;
     margin: 0 auto;
   }
 
   .faq ul li {
     border-bottom: 1px solid #000;
+    color: #000;
   }
 
   .help {
@@ -722,7 +723,7 @@ body {
 
 
 
-
+.sldr_brdr{ border: 5px solid #fff;}
 
 
 

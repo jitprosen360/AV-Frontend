@@ -5,7 +5,7 @@ const Compare = () => {
     
     return(<>
     
-    <div className="compare pt-[80px] pl-[20px] pr-[20px] md:pl-[70px] md:pr-[70px] lg:pl-[70px] lg:pr-[70px] xl:pl-[70px] xl:pr-[70px] ">
+    <div className="compare pt-[80px] pl-[20px] pr-[20px] md:pl-[70px] md:pr-[70px] lg:pl-[70px] lg:pr-[70px] xl:pl-[70px] xl:pr-[70px] bg-white ">
   
         <div className='text-[20px] text-[#00305F] gurmukhi'>How do we compare?</div>
 

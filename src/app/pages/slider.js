@@ -66,11 +66,11 @@ const Slider = () => {
 
   return (
     <div className='main-yell-bg h-full gurmukhi'>
-      <div className='pt-[230px] pb-[120px] pl-[50px] text-[35px] md:text-[55px] font-medium md:w-2/4 w-full'>
+      <div className='pt-[230px] pb-[120px] pl-[50px] text-[35px] md:text-[55px] font-medium md:w-2/4 w-full text-black'>
         Our 5 steps end-to-end process created with emerging brands in mind
       </div>
-      <div className='hidden md:block'>
-        <div className='h-screen flex items-center justify-center'>
+      <div className='hidden md:block '>
+        <div className='h-screen flex items-center justify-center sldr_brdr'>
           {cards.map((card, key) => (
             <div
               key={key}
