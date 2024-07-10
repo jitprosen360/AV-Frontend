@@ -50,7 +50,7 @@ const Faq = () => {
                   strokeLinejoin="round"
                 ></path>
               </svg>
-              <span>{item.question}</span>
+              <span className='text-black text-[16px]'>{item.question}</span>
             </div>
             <div
               ref={el => faqRefs.current[index] = el}

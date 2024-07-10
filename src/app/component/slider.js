@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Card from './Card';
+import Card from '../component/Card';
 import { gsap } from 'gsap';
 
 const cards = [
@@ -66,7 +66,7 @@ const Slider = () => {
 
   return (
     <div className='main-yell-bg h-full gurmukhi'>
-      <div className='pt-[230px] pb-[120px] pl-[50px] text-[35px] md:text-[55px] font-medium md:w-2/4 w-full'>
+      <div className='pt-[230px] text-black pb-[120px] pl-[50px] text-[35px] md:text-[55px] font-medium md:w-2/4 w-full'>
         Our 5 steps end-to-end process created with emerging brands in mind
       </div>
       <div className='hidden md:block'>

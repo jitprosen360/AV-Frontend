@@ -6,28 +6,28 @@ import { ScrollSmoother } from 'gsap/ScrollSmoother';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-import Designer from './pages/designer';
-import Casual from './pages/casual';
-import Athleisure from './pages/athleisure';
-import Lounge from './pages/Lounge';
-import CustomCursor from './pages/customCursor';
-import LogoScroller from './brandHorizentalAnimation';
-import WhatWeDo from './whatWeDo';
+import Designer from './hoverslider/designer';
+import Casual from './hoverslider/casual';
+import Athleisure from './hoverslider/athleisure';
+import Lounge from './hoverslider/Lounge';
+import CustomCursor from './component/customCursor';
+import LogoScroller from './component/brandHorizentalAnimation';
+import WhatWeDo from './component/whatWeDo';
 import MenuAnimation from './menu';
-import KeyFeature from './keyFeature';
+import KeyFeature from './component/keyFeature';
 
-import CardCarousel from './CardCarousel';
-import Highstreet from './pages/highstreet';
-import Athletic from './pages/athletic';
-import Swim from './pages/swim';
-import Denim from './pages/denim';
-import Fullfashion from './pages/fullfashion';
-import Outdoors from './pages/outdoors';
-import Others from './pages/others';
-import Slider from './pages/slider';
-import Compare from './pages/compare';
-import Faq from './pages/faq';
-import Howcanhelp from './pages/howcanhelp';
+import CardCarousel from './component/CardCarousel';
+import Highstreet from './hoverslider/highstreet';
+import Athletic from './hoverslider/athletic';
+import Swim from './hoverslider/swim';
+import Denim from './hoverslider/denim';
+import Fullfashion from './hoverslider/fullfashion';
+import Outdoors from './hoverslider/outdoors';
+import Others from './hoverslider/others';
+import Slider from './component/slider';
+import Compare from './component/compare';
+import Faq from './component/faq';
+import Howcanhelp from './component/howcanhelp';
 
 const images = {
   Designer: 'designer_box.jpg',
