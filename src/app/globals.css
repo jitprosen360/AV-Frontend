@@ -1908,7 +1908,11 @@ nav {
 }
 
 .sldr_brdr{
-  border: 5px solid #fff;
+  border: 5px solid #e00f0f;
+  margin: auto;
+}
+
+.vw80{
 }
 
 :root {

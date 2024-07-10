@@ -70,7 +70,9 @@ const Slider = () => {
         Our 5 steps end-to-end process created with emerging brands in mind
       </div>
       <div className='hidden md:block '>
-        <div className='h-screen flex items-center justify-center sldr_brdr'>
+      
+ 
+        <div className='h-screen flex items-center justify-center '>
           {cards.map((card, key) => (
             <div
               key={key}
@@ -82,6 +84,8 @@ const Slider = () => {
             </div>
           ))}
         </div>
+ 
+
       </div>
 
       <div className='block md:hidden relative h-screen'>

@@ -711,10 +711,6 @@ body {
 
 
 
-
-
-
-
   .KeayFeatureSection {
     background-color: #fff;
     color: #000;
@@ -723,9 +719,9 @@ body {
 
 
 
-.sldr_brdr{ border: 5px solid #fff;}
+.sldr_brdr{ border: 5px solid #e00f0f;  margin: auto;}
 
-
+.vw80{  }
 
 
 
