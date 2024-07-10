@@ -189,7 +189,7 @@ body {
   }
 
   .leftPanel a {
-    color:#FFF;
+    color: #FFF;
     font-size: 14px;
     border-radius: 50px;
     padding: 6px 18px 7px;
@@ -289,7 +289,7 @@ body {
     height: 500px;
     border-radius: 7px;
   }
- 
+
 
 
 
@@ -318,7 +318,7 @@ body {
     height: 500px;
     background-position: center center;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     border-radius: 7px;
     background-color: #FF6D3A;
   }
@@ -519,90 +519,14 @@ body {
     height: 1px;
     background-color: black;
   }
-
-
-  /* 
-
-
-  .containerFeature {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 400px
-       
-  }
-
-  .flexDiv {
-    flex-grow: 1;
-    flex-basis: 100%;
-    transition: flex-grow 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-
-  .flexC {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-
-  .cutout {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #FFE700;
-    display: flex;
-    bottom: 0;
-  }
-
-
-  .flex-1 {
-    flex: 1;
-    padding: 10px;
-  }
-
-  .headingFeature {
-    font-size: 1.5rem;
-    z-index: 1;
-    width: 200px; 
-
-  }
-
-  .contentFeature {
-    width: 250px;
-    margin-right: 15px;
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-
-  @media (min-width: 768px) {
-    .flexDiv {
-      flex-basis: 0;
-    }
-
-    .contentFeature {
-      display: none;
-    }
-  }
- */
-
+ 
 
 
   .cutout {
     position: absolute;
-    width: 540px;
-    z-index: -10;
-    height: 100%;
+    width: 540px; 
     background-color: #fff;
+    border-left:1px solid #8571FD;
   }
 
 
@@ -678,87 +602,110 @@ body {
   .gurmukhi {
     font-family: "Anek Gurmukhi", "sans-serif";
   }
+
   .main-yell-bg {
-    background-color : #FBFD5D;
-    height:1550px;
+    background-color: #FBFD5D;
+    height: 1550px;
   }
-  .ml-custom{
+
+  .ml-custom {
     margin-left: -.8rem;
   }
-  
-  
-  .w-22{
+
+
+  .w-22 {
     width: 5.5rem;
   }
-  .w-70{
+
+  .w-70 {
     width: 70%;
-   
+
   }
-  .w-90{
+
+  .w-90 {
     width: 88%;
-   
+
   }
-  .h-250{
+
+  .h-250 {
     height: 53rem;
   }
-  .h-40{
+
+  .h-40 {
     height: 40rem;
   }
-  .w-50{
+
+  .w-50 {
     width: 22rem;
   }
+
   .box-div {
     width: 100%;
     margin: 0 auto;
   }
-  
-  .bg-secondgrid {background-color: #EFFDFF;
-  
+
+  .bg-secondgrid {
+    background-color: #EFFDFF;
+
   }
+
   .alllist ul li {
-    display: grid; /* Flex container */
-    align-items: center; /* Center items vertically */
+    display: grid;
+    /* Flex container */
+    align-items: center;
+    /* Center items vertically */
     height: 104px;
-    border-top: 1px solid #A2D2F0; /* Top border */
+    border-top: 1px solid #A2D2F0;
+    /* Top border */
   }
-  
+
   .alllist ul li:nth-child(1) {
     height: 235px;
     border: 0;
   }
-  
-  .last-border ul { border-left: 1px solid #A2D2F0 }
+
+  .last-border ul {
+    border-left: 1px solid #A2D2F0
+  }
+
   .custom-orange {
     color: #FF6D3A;
   }
-  .fill-star{
+
+  .fill-star {
     fill: #FFAC1A;
   }
+
   .faq {
     width: 80%;
     margin: 0 auto;
   }
+
   .faq ul li {
-    border-bottom : 1px solid #000;
+    border-bottom: 1px solid #000;
   }
+
   .help {
     background-color: #000;
   }
+
   .cborder {
-    border-bottom : 1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
+
   .cborder-top {
-    border-top : 1px solid #fff;
+    border-top: 1px solid #fff;
   }
-  
+
   .custom-rotation {
     transform: rotate(-45deg);
   }
-  .size-2{
+
+  .size-2 {
     width: 1rem;
     height: 1rem;
   }
-  
+
   /* new css for fix and responsive */
 
 
@@ -767,7 +714,10 @@ body {
 
 
 
-
+  .KeayFeatureSection {
+    background-color: #fff;
+    color: #000;
+  }
 
 
 
