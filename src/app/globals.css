@@ -1907,14 +1907,6 @@ nav {
   color: #000;
 }
 
-.sldr_brdr{
-  border: 5px solid #e00f0f;
-  margin: auto;
-}
-
-.vw80{
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
