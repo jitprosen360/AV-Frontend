@@ -103,14 +103,7 @@ export default function Home() {
               </div>
             </div>
           </nav>
-
-           
-
-
- <LeftNav/>
-
-
-
+            <LeftNav/>
           <div className="leftPanel2 absolute inset-0 flex items-center w-64 z-40">
             <div className="pl-3">
               <div className='menuContent'>
@@ -212,20 +205,10 @@ export default function Home() {
           </div>
           <Slider />
           <KeyFeature />
-         
           <CardCarousel />
-
-         
-
           <Compare />
-
           <Faq />
-
           <Howcanhelp />
-
-
-
-       
         </div>
       </div>
     </>

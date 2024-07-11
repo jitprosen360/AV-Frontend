@@ -1,27 +1,12 @@
 import React from 'react'
 import Link from 'next/link';
-
-
-
- import DesignerPage from './pages/designerPage';
-import CasualPage from './pages/casualPage';
-import AthleisurePage from './pages/athleisurePage';
-import LoungePage from './pages/LoungePage';
-import HighstreetPage from './pages/highstreetPage';
-import AthleticPage from './pages/athleticPage';
-import SwimPage from './pages/swimPage';
-import DenimPage from './pages/denimPage';
-import FullfashionPage from './pages/fullfashionPage';
-
-
-
 function LeftNav() {
   return (
     <>
         <div className="leftPanel absolute inset-0 flex items-center w-64 h-full z-40">
       <div className="pl-3">
         <div className="one left_nav">
-          <Link href="./designerPage"> Designer </Link>
+          <Link href="/designerPage"> Designer </Link>
         </div>
         <div className="two left_nav">
           <Link href="/casualPage"> Casual </Link>

@@ -7,6 +7,10 @@ function DesignerPage() {
  
 
     return (
+        <>
+        <div>
+            <h1>check</h1>
+        </div>
         <div className="showcase  bg-[url('/designer_bg.jpg')] hidden">
             <div className='oneShowcase pl-20 lg:ml-0 '> 
             <div className="flex flex-col lg:flex-row justify-center">
@@ -25,11 +29,8 @@ function DesignerPage() {
             </div>
             </div>
         </div>
+        </>
     );
 }
 
 export default DesignerPage;
-
-
-
-
