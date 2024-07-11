@@ -14,7 +14,7 @@ const images = {
   };
 
 
-function leftNav2() {
+function LeftNav2() {
 
     const [hoveredItem, setHoveredItem] = useState(null);
     const menuItems = useRef([]);
@@ -90,4 +90,4 @@ function leftNav2() {
   )
 }
 
-export default leftNav2
+export default LeftNav2

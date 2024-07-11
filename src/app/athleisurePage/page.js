@@ -5,11 +5,12 @@ import MenuAnimation from '../menu';
 import LeftNavInner from '../leftNavinner';
 import TopNav from '../topNav';
 import CustomCursor from '../component/customCursor';
-import LeftNav2 from '../squerAnimation';
+ 
 import SquerAnimation from '../squerAnimation';
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import LeftNav2 from '../leftNav2';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -42,7 +43,7 @@ function AthleisurePage() {
                 <div id="smooth-content">
                    
                     <TopNav />
-                    <LeftNav2 />
+                 <LeftNav2/>
                     <SquerAnimation />
                     <LeftNavInner />
                     <div ref={threeShowcaseRef} className="ShowCaseSection bg-[url('/athleisure_bg.jpg')] ">
