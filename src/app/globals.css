@@ -787,10 +787,6 @@ video {
   width: 2rem;
 }
 
-.w-\[100\%\]{
-  width: 100%;
-}
-
 .w-\[14px\]{
   width: 14px;
 }
@@ -1106,6 +1102,10 @@ video {
   padding-bottom: 10rem;
 }
 
+.pb-7{
+  padding-bottom: 1.75rem;
+}
+
 .pb-\[100px\]{
   padding-bottom: 100px;
 }
@@ -1200,6 +1200,10 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pt-7{
+  padding-top: 1.75rem;
 }
 
 .pt-\[100px\]{
@@ -1979,10 +1983,6 @@ nav {
   height: 1rem;
 }
 
-.border-r-customPurple {
-  border-left: 2px solid #8571FD;
-}
-
 .card-bg-1 {
   background-color: #F6F6F6
 }
@@ -2139,10 +2139,6 @@ body {
     border-style: solid;
   }
 
-  .md\:border-none{
-    border-style: none;
-  }
-
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -2239,6 +2235,7 @@ body {
     width: 38%;
     background-color: #fff;
     padding-right: 25px;
+    border-left: 1px solid #8571FD;
   }
 
   .md\:lineKeyLG {
@@ -2284,10 +2281,6 @@ body {
 
   .lg\:flex-row{
     flex-direction: row;
-  }
-
-  .lg\:border-none{
-    border-style: none;
   }
 
   .lg\:px-0{
@@ -2383,6 +2376,7 @@ body {
     width: 38%;
     background-color: #fff;
     padding-right: 25px;
+    border-left: 1px solid #8571FD;
   }
 
   .lg\:lineKeyLG {
