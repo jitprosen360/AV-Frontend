@@ -3,6 +3,8 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import MenuAnimation from '../menu';
 import LeftNavInner from '../leftNavinner';
+import TopNav from '../topNav';
+import CustomCursor from '../component/customCursor';
 function FullfashionPage() {
     const nineShowcaseRef = useRef(null);
     const compresDivRef = useRef(null);
@@ -76,7 +78,8 @@ function FullfashionPage() {
 
     return (
         <>
-   <MenuAnimation />
+        <CustomCursor />
+  <TopNav/>
    <LeftNavInner />
         <div ref={nineShowcaseRef} className="showcase   bg-[url('/fullfashion_bg.jpg')] ">
            <div className='nineShowcase'> 

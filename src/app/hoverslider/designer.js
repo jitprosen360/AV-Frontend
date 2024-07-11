@@ -110,6 +110,7 @@ function Designer() {
     }, []);
 
     return (
+        <>
         <div ref={oneShowcaseRef} className="showcase  bg-[url('/designer_bg.jpg')] hidden">
             <div className='oneShowcase pl-20 lg:ml-0 '> 
             <div className="flex flex-col lg:flex-row justify-center">
@@ -128,6 +129,8 @@ function Designer() {
             </div>
             </div>
         </div>
+
+        </>
     );
 }
 

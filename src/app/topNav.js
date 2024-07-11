@@ -2,10 +2,11 @@
 import React, { useRef, useLayoutEffect, useState } from 'react';
 import { gsap } from 'gsap';
 
-const MenuAnimation = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+function TopNav() {
+    const [isExpanded, setIsExpanded] = useState(false);
 
- 
+
+    
   const openMenuTimeline = () => {
  
     gsap.fromTo('.leftPanel',      
@@ -155,12 +156,27 @@ const MenuAnimation = () => {
     setIsExpanded(!isExpanded);
   };
 
+
+
   return (
     <>
-      <a className="openMenubtn" onClick={handleMenuClick} style={{ opacity: 1 }}>Menu</a>
-      <a className="closeMenubtn" onClick={handleMenuClick} style={{ display: 'none', opacity: 0 }}>Close <span>X</span></a>
-    </>
-  );
-};
+           <nav className="absolute container z-50 mt-3 bg-black">
+            <div className="relative container mx-auto flex items-center justify-between">
+              <div className="absolute left-0 h-12 flex items-center justify-center">
+              <a className="openMenubtn" onClick={handleMenuClick} style={{ opacity: 1 }}>Menu</a>
+              <a className="closeMenubtn" onClick={handleMenuClick} style={{ display: 'none', opacity: 0 }}>Close <span>X</span></a>
+              </div>
+              <div className="logo w-24 h-12 mx-auto flex items-center justify-center">
+                <img src='./logo_av.svg' alt="Logo" />
+              </div>
+              <div className="absolute right-0 mr-4 h-12 flex items-center justify-center">
+                <a href="#" className="schdule">Schedule a call</a>
+              </div>
+            </div>
+          </nav>
 
-export default MenuAnimation;
+    </>
+  )
+}
+
+export default TopNav

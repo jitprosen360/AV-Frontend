@@ -78,7 +78,7 @@ const CardCarousel = () => {
              {card.content}
            </div>
          </div>
-         <div className='cardName text-center'>{card.name} </div>         
+         <div className='cardName text-center text-black'>{card.name} </div>         
 
        </div>
      </div>

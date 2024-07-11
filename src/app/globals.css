@@ -787,10 +787,6 @@ video {
   width: 2rem;
 }
 
-.w-\[100\%\]{
-  width: 100%;
-}
-
 .w-\[14px\]{
   width: 14px;
 }
@@ -1047,6 +1043,10 @@ video {
   background-image: url('/swim_box.jpg');
 }
 
+.bg-contain{
+  background-size: contain;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1094,6 +1094,11 @@ video {
   padding-bottom: 9rem;
 }
 
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1104,6 +1109,10 @@ video {
 
 .pb-40{
   padding-bottom: 10rem;
+}
+
+.pb-7{
+  padding-bottom: 1.75rem;
 }
 
 .pb-\[100px\]{
@@ -1146,6 +1155,10 @@ video {
   padding-left: 1rem;
 }
 
+.pl-5{
+  padding-left: 1.25rem;
+}
+
 .pl-6{
   padding-left: 1.5rem;
 }
@@ -1178,6 +1191,10 @@ video {
   padding-right: 0px;
 }
 
+.pr-5{
+  padding-right: 1.25rem;
+}
+
 .pr-\[20px\]{
   padding-right: 20px;
 }
@@ -1200,6 +1217,10 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pt-7{
+  padding-top: 1.75rem;
 }
 
 .pt-\[100px\]{
@@ -1646,6 +1667,13 @@ nav {
   border-radius: 7px;
 }
 
+.compresCoverSM {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 7px;
+}
+
 .compresDiv {
   overflow: hidden;
   position: absolute;
@@ -1654,9 +1682,27 @@ nav {
   border-radius: 7px;
 }
 
+.compresDivSM {
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  border-radius: 7px;
+}
+
 .compresImg {
   width: 400px;
   height: 500px;
+  background-position: center center;
+  position: absolute;
+  right: 0;
+  border-radius: 7px;
+  background-color: #FF6D3A;
+}
+
+.compresImgSM {
+  width: 200px;
+  height: 250px;
   background-position: center center;
   position: absolute;
   right: 0;
@@ -1995,10 +2041,6 @@ nav {
   height: 1rem;
 }
 
-.border-r-customPurple {
-  border-left: 2px solid #8571FD;
-}
-
 .card-bg-1 {
   background-color: #F6F6F6
 }
@@ -2020,6 +2062,27 @@ nav {
 }
 
 /* new css for fix and responsive */
+
+.leftBarLoader{
+  height: 100vh;
+  width: 34vw;
+  position: absolute;
+  z-index: 999;
+}
+
+.righttBarLoader{
+  height: 100vh;
+  width: 34vw;
+  position: absolute;
+  z-index: 999;
+}
+
+.topBarLoader{
+  height: 10vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 999;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -2155,10 +2218,6 @@ body {
     border-style: solid;
   }
 
-  .md\:border-none{
-    border-style: none;
-  }
-
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -2255,6 +2314,7 @@ body {
     width: 38%;
     background-color: #fff;
     padding-right: 25px;
+    border-left: 1px solid #8571FD;
   }
 
   .md\:lineKeyLG {
@@ -2294,16 +2354,16 @@ body {
     width: 24rem;
   }
 
+  .lg\:basis-1\/2{
+    flex-basis: 50%;
+  }
+
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
     flex-direction: row;
-  }
-
-  .lg\:border-none{
-    border-style: none;
   }
 
   .lg\:px-0{
@@ -2367,6 +2427,31 @@ body {
     font-size: 74px;
   }
 
+  .lg\:compresCover {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    border-radius: 7px;
+  }
+
+  .lg\:compresDiv {
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    border-radius: 7px;
+  }
+
+  .lg\:compresImg {
+    width: 400px;
+    height: 500px;
+    background-position: center center;
+    position: absolute;
+    right: 0;
+    border-radius: 7px;
+    background-color: #FF6D3A;
+  }
+
   .lg\:revelDiv {
     overflow: hidden;
     position: relative;
@@ -2399,6 +2484,7 @@ body {
     width: 38%;
     background-color: #fff;
     padding-right: 25px;
+    border-left: 1px solid #8571FD;
   }
 
   .lg\:lineKeyLG {

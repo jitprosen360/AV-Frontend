@@ -3,6 +3,8 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import MenuAnimation from '../menu';
 import LeftNavInner from '../leftNavinner';
+import TopNav from '../topNav';
+import CustomCursor from '../component/customCursor';
 function CasualPage() {
     const twoShowcaseRef = useRef(null);
     const compresDivRef = useRef(null);
@@ -84,7 +86,8 @@ function CasualPage() {
 
     return (
         <>
-     <MenuAnimation />
+        <CustomCursor />
+      <TopNav/>
      <LeftNavInner />
         <div ref={twoShowcaseRef} className="showcase  bg-[url('/casual_bg.jpg')] ">
            <div className='twoShowcase'> 

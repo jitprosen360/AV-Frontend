@@ -3,14 +3,16 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import MenuAnimation from '../menu';
 import LeftNavInner from '../leftNavinner';
+import TopNav from '../topNav';
+import CustomCursor from '../component/customCursor';
 function DesignerPage() {
    
  
 
     return (
         <>
-        
-    <MenuAnimation />
+        <CustomCursor/>
+  <TopNav/>
     <LeftNavInner />
         <div className="showcase  bg-[url('/designer_bg.jpg')]">
             <div className='oneShowcase pl-20 lg:ml-0 '> 
