@@ -599,9 +599,9 @@ body {
 
   .cutout {
     position: absolute;
-    width: 38%;
-    
+    width: 38%;    
     background-color: #fff;
+    padding-right: 25px;
   }
 
 

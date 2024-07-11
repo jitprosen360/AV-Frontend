@@ -2238,6 +2238,7 @@ body {
     position: absolute;
     width: 38%;
     background-color: #fff;
+    padding-right: 25px;
   }
 
   .md\:lineKeyLG {
@@ -2381,6 +2382,7 @@ body {
     position: absolute;
     width: 38%;
     background-color: #fff;
+    padding-right: 25px;
   }
 
   .lg\:lineKeyLG {
