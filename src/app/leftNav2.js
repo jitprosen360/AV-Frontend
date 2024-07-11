@@ -1,4 +1,6 @@
-import React from 'react'
+"use client";
+import React, { useState, useLayoutEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
 const images = {
     Designer: 'designer_box.jpg',

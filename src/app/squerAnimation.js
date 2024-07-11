@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useLayoutEffect, useRef } from 'react';
-
+import { gsap } from 'gsap';
 
 const images = {
     Designer: 'designer_box.jpg',
@@ -27,28 +27,28 @@ function SquerAnimation() {
   
 
     
-    useLayoutEffect(() => { 
-        menuItems.current.forEach((item) => {
-          const underline = item.querySelector('.underline');
-          const textWidth = item.offsetWidth;
+    // useLayoutEffect(() => { 
+    //     menuItems.current.forEach((item) => {
+    //       const underline = item.querySelector('.underline');
+    //       const textWidth = item.offsetWidth;
   
   
-          item.addEventListener('mouseenter', () => {
-            gsap.fromTo(underline,
-              { width: '0', duration: 0.5, left: 0 },
-              { width: textWidth, duration: 0.5, left: 0 });
-          });
+    //       item.addEventListener('mouseenter', () => {
+    //         gsap.fromTo(underline,
+    //           { width: '0', duration: 0.5, left: 0 },
+    //           { width: textWidth, duration: 0.5, left: 0 });
+    //       });
   
-          item.addEventListener('mouseleave', () => {
-            gsap.fromTo(underline,
-              { width: textWidth, duration: 0.5, right: 0 },
-              { width: '0', duration: 0.5, right: 0 }
-            );
-          });
-        });
+    //       item.addEventListener('mouseleave', () => {
+    //         gsap.fromTo(underline,
+    //           { width: textWidth, duration: 0.5, right: 0 },
+    //           { width: '0', duration: 0.5, right: 0 }
+    //         );
+    //       });
+    //     });
    
   
-    }, []);
+    // }, []);
 
 
  
