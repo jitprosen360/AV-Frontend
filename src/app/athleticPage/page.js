@@ -3,6 +3,8 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import MenuAnimation from '../menu';
 import LeftNavInner from '../leftNavinner';
+import TopNav from '../topNav';
+import CustomCursor from '../component/customCursor';
 
 function AthleticPage() {
     const sixShowcaseRef = useRef(null);
@@ -85,7 +87,8 @@ function AthleticPage() {
 
     return (
         <>
-       <MenuAnimation />
+        <CustomCursor />
+       <TopNav />
        <LeftNavInner />
         <div ref={sixShowcaseRef} className="showcase bg-[url('/athletics_bg.jpg')] ">          
           <div className='sixShowcase'> 

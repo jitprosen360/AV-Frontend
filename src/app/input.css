@@ -283,6 +283,13 @@ body {
     border-radius: 7px;
   }
 
+  .compresCoverSM {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    border-radius: 7px;
+  }
+
   .compresDiv {
     overflow: hidden;
     position: absolute;
@@ -290,7 +297,13 @@ body {
     height: 500px;
     border-radius: 7px;
   }
- 
+  .compresDivSM {
+    overflow: hidden;
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    border-radius: 7px;
+  }
 
 
 
@@ -302,7 +315,20 @@ body {
     right: 0;
     border-radius: 7px;
     background-color: #FF6D3A;
+ 
   }
+
+  .compresImgSM {
+    width: 200px;
+    height: 250px;
+    background-position: center center;
+    position: absolute;
+    right: 0;
+    border-radius: 7px;
+    background-color: #FF6D3A;
+  }
+
+
 
   .compresImgLtoR {
     width: 400px;

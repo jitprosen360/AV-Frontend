@@ -3,6 +3,8 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import MenuAnimation from '../menu';
 import LeftNavInner from '../leftNavinner';
+import TopNav from '../topNav';
+import CustomCursor from '../component/customCursor';
 function HighstreetPage() {
     const fiveShowcaseRef = useRef(null);
     const compresDivRef = useRef(null);
@@ -79,7 +81,8 @@ function HighstreetPage() {
 
     return (
         <>
-      <MenuAnimation />
+        <CustomCursor/>
+     <TopNav/>
       <LeftNavInner />
         <div ref={fiveShowcaseRef} className="showcase   bg-[url('/highstreet_bg.jpg')] ">
            
