@@ -2237,8 +2237,6 @@ body {
   .md\:cutout {
     position: absolute;
     width: 38%;
-    z-index: -10;
-    height: 100%;
     background-color: #fff;
   }
 
@@ -2382,8 +2380,6 @@ body {
   .lg\:cutout {
     position: absolute;
     width: 38%;
-    z-index: -10;
-    height: 100%;
     background-color: #fff;
   }
 
