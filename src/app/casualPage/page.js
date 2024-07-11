@@ -1,88 +1,92 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-
+import MenuAnimation from '../menu';
+import LeftNavInner from '../leftNavinner';
 function CasualPage() {
     const twoShowcaseRef = useRef(null);
     const compresDivRef = useRef(null);
     const compresTextRef = useRef(null);
 
 
-    useEffect(() => {
-        const showtwoShowcase = () => {
+    // useEffect(() => {
+    //     const showtwoShowcase = () => {
 
 
             
-            gsap.killTweensOf(twoShowcaseRef.current);
-            gsap.killTweensOf(compresDivRef.current);
-            gsap.killTweensOf(compresTextRef.current);
+    //         gsap.killTweensOf(twoShowcaseRef.current);
+    //         gsap.killTweensOf(compresDivRef.current);
+    //         gsap.killTweensOf(compresTextRef.current);
 
-            gsap.fromTo('.coverVideo',
-                { display: 'block',  duration: 0, },
-                { display: 'none', duration: 0, }
-            );
+    //         gsap.fromTo('.coverVideo',
+    //             { display: 'block',  duration: 0, },
+    //             { display: 'none', duration: 0, }
+    //         );
             
-            gsap.fromTo(twoShowcaseRef.current,
-                { display: 'none', opacity:0, duration: 0.5, },
-                { display: 'block', duration: 0.1, opacity:1 }
-            );
+    //         gsap.fromTo(twoShowcaseRef.current,
+    //             { display: 'none', opacity:0, duration: 0.5, },
+    //             { display: 'block', duration: 0.1, opacity:1 }
+    //         );
 
-            gsap.fromTo(compresDivRef.current,
-                {delay:0.5, width: '0%', right: '0', left: 'auto' },
-                { width: '100%', duration: 1, ease: "power4.out" }
-            );
+    //         gsap.fromTo(compresDivRef.current,
+    //             {delay:0.5, width: '0%', right: '0', left: 'auto' },
+    //             { width: '100%', duration: 1, ease: "power4.out" }
+    //         );
 
-            gsap.fromTo(compresTextRef.current,
-                {opacity:0, x:-200},
-                {opacity:1,x:0, duration:0.5 }
-            );
-
-
-        };
-
-        const hidetwoShowcase = () => {
+    //         gsap.fromTo(compresTextRef.current,
+    //             {opacity:0, x:-200},
+    //             {opacity:1,x:0, duration:0.5 }
+    //         );
 
 
-            gsap.killTweensOf(twoShowcaseRef.current);
-            gsap.killTweensOf(compresDivRef.current);
-            gsap.killTweensOf(compresTextRef.current);
+    //     };
 
-            gsap.fromTo('.coverVideo',
-                { display: 'none',  duration: 0, },
-                { display: 'block', duration: 0, }
-            );
+    //     const hidetwoShowcase = () => {
 
-            gsap.to(twoShowcaseRef.current,
-                { display: 'none', duration: 0.1 }
-            );
 
-            gsap.to(compresDivRef.current,
-                { width: '0%', duration: 1, ease: "power4.out" }
-            );
+    //         gsap.killTweensOf(twoShowcaseRef.current);
+    //         gsap.killTweensOf(compresDivRef.current);
+    //         gsap.killTweensOf(compresTextRef.current);
 
-            gsap.fromTo(twoShowcaseRef.current,               
-                { display: 'block', duration: 0.2,  },
-                { display: 'none', opacity:0, duration: 0.5, }
-            );
+    //         gsap.fromTo('.coverVideo',
+    //             { display: 'none',  duration: 0, },
+    //             { display: 'block', duration: 0, }
+    //         );
 
-        };
+    //         gsap.to(twoShowcaseRef.current,
+    //             { display: 'none', duration: 0.1 }
+    //         );
 
-        const spanElement = document.querySelector('.two');
-        if (spanElement) {
-            spanElement.addEventListener('mouseenter', showtwoShowcase);
-            spanElement.addEventListener('mouseleave', hidetwoShowcase);
-        }
+    //         gsap.to(compresDivRef.current,
+    //             { width: '0%', duration: 1, ease: "power4.out" }
+    //         );
 
-        return () => {
-            if (spanElement) {
-                spanElement.removeEventListener('mouseenter', showtwoShowcase);
-                spanElement.removeEventListener('mouseleave', hidetwoShowcase);
-            }
-        };
-    }, []);
+    //         gsap.fromTo(twoShowcaseRef.current,               
+    //             { display: 'block', duration: 0.2,  },
+    //             { display: 'none', opacity:0, duration: 0.5, }
+    //         );
+
+    //     };
+
+    //     const spanElement = document.querySelector('.two');
+    //     if (spanElement) {
+    //         spanElement.addEventListener('mouseenter', showtwoShowcase);
+    //         spanElement.addEventListener('mouseleave', hidetwoShowcase);
+    //     }
+
+    //     return () => {
+    //         if (spanElement) {
+    //             spanElement.removeEventListener('mouseenter', showtwoShowcase);
+    //             spanElement.removeEventListener('mouseleave', hidetwoShowcase);
+    //         }
+    //     };
+    // }, []);
 
     return (
-        <div ref={twoShowcaseRef} className="showcase  bg-[url('/casual_bg.jpg')] hidden">
+        <>
+     <MenuAnimation />
+     <LeftNavInner />
+        <div ref={twoShowcaseRef} className="showcase  bg-[url('/casual_bg.jpg')] ">
            <div className='twoShowcase'> 
             <div className="flex flex-col lg:flex-row justify-center">
                
@@ -102,6 +106,7 @@ function CasualPage() {
                 </div> 
             </div>
         </div>
+        </>
     );
 }
 
