@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
+import Loader from './loader';
 import Designer from './hoverslider/designer';
 import Casual from './hoverslider/casual';
 import Athleisure from './hoverslider/athleisure';
@@ -32,6 +32,7 @@ import Compare from './component/compare';
 import Faq from './component/faq';
 import Howcanhelp from './component/howcanhelp';
 import LeftNav from './leftNav';
+
 
 const images = {
   Designer: 'designer_box.jpg',
@@ -87,7 +88,9 @@ export default function Home() {
 
   return (
     <>
+      
       <CustomCursor />
+    
       <div id="smooth-wrapper" ref={main}>
         <div id="smooth-content">
           <nav className="absolute container z-50 mt-3 bg-black">
@@ -104,10 +107,10 @@ export default function Home() {
             </div>
           </nav>
 
-           
 
 
- <LeftNav/>
+
+          <LeftNav />
 
 
 
@@ -153,15 +156,19 @@ export default function Home() {
               <div className="topBar"></div>
               <div className="bottomBar"></div>
               <div className="cornerShowcase z-50">
+
                 <div className="absolute top-0 left-0 z-50">
                   <img src="corner-left-top-2.svg" alt="top-left corner" className="w-8 h-8" />
                 </div>
+
                 <div className="absolute top-0 right-0 z-50">
                   <img src="corner-right-top-2.svg" alt="top-right corner" className="w-8 h-8" />
                 </div>
+
                 <div className="absolute bottom-0 left-0 z-50">
                   <img src="corner-left-bottom-2.svg" alt="bottom-left corner" className="w-8 h-8" />
                 </div>
+
                 <div className="absolute bottom-0 right-0 z-50">
                   <img src="corner-right-bottom-2.svg" alt="bottom-right corner" className="w-8 h-8" />
                 </div>
@@ -209,23 +216,19 @@ export default function Home() {
           <div className="ScrollSection bg-white pt-5 ">
             <LogoScroller />
             <WhatWeDo />
+            <Slider />
+            <KeyFeature />
+            <CardCarousel />
+            <Compare />
+            <Faq />
+            <Howcanhelp />
+
           </div>
-          <Slider />
-          <KeyFeature />
-         
-          <CardCarousel />
-
-         
-
-          <Compare />
-
-          <Faq />
-
-          <Howcanhelp />
 
 
 
-       
+
+
         </div>
       </div>
     </>

@@ -767,6 +767,10 @@ video {
   height: 100vh;
 }
 
+.h-52{
+  height: 13rem;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -957,6 +961,11 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-red-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/athleisure_bg\.jpg\'\)\]{
@@ -2004,6 +2013,27 @@ nav {
 }
 
 /* new css for fix and responsive */
+
+.leftBarLoader{
+  height: 100vh;
+  width: 34vw;
+  position: absolute;
+  z-index: 999;
+}
+
+.righttBarLoader{
+  height: 100vh;
+  width: 34vw;
+  position: absolute;
+  z-index: 999;
+}
+
+.topBarLoader{
+  height: 10vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 999;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

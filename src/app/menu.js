@@ -1,10 +1,11 @@
+"use client";
 import React, { useRef, useLayoutEffect, useState } from 'react';
 import { gsap } from 'gsap';
 
 const MenuAnimation = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // Define the open timeline
+ 
   const openMenuTimeline = () => {
  
 
@@ -73,7 +74,7 @@ const MenuAnimation = () => {
     });
   };
 
-  // Define the close timeline
+  
   const closeMenuTimeline = () => {
 
 

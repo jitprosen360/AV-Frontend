@@ -230,6 +230,7 @@ body {
     width: 100%;
     position: absolute;
     background-size: cover;
+   
 
   }
 
@@ -783,15 +784,15 @@ body {
 
 
 
+.loaderstyle{ position: absolute; width: 1px; height: 80vh; left: 50%;}
 
 
 
 
-
-
-
-
-
+.leftBarLoader{ height: 100vh; width: 34vw; position: absolute; z-index: 999;}
+.righttBarLoader{  height: 100vh; width: 34vw; position: absolute; z-index: 999;}
+.topBarLoader{ height: 10vh; width: 100vw; position: absolute;  z-index: 999;}
+.bottomBarLoaderP{height: 10vh; width: 100vw;  position: absolute; z-index: 999;}
 
 
 
