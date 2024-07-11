@@ -129,7 +129,7 @@ function OthersPage() {
                                     <p className='text-[60px] font-medium text-[#00305F] gurmukhi' >Others</p>
                                 </div>
                                 <div  className='lg:basis-1/2 pt-[85px]'>
-                                    <p className='text-[33px] font-medium text-[#00305F] gurmukhi' >Our goal is to understand our customers' needs and exceed their expectations. We treat your brand like our own.</p>
+                                    <p className='text-[33px] font-medium text-[#00305F] gurmukhi' >Our goal is to understand our customers needs and exceed their expectations. We treat your brand like our own.</p>
                                 </div>
                             </div>
                         </div>
