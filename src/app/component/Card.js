@@ -42,7 +42,7 @@ const Card = ({ card, selected, isMobile , index  }) => {
             <h2 className=' md:rotate-90'>{card.cardTitle}</h2>
           </div>
           {/* Left Side (cardNo) */}
-          <span className={`pl-[30px]  absolute ${card.textColor} ${isMobile ? 'w-1/2 right-0 text-right pr-[25px] pt-[35px]' : 'pt-[45px]'}`}>{card.cardNo}</span>
+          <span className={`pl-[30px] font-semibold  absolute ${card.textColor} ${isMobile ? 'w-1/2 right-0 text-right pr-[25px] pt-[35px]' : 'pt-[45px]'}`}>{card.cardNo}</span>
         </div>
         <div className={`${isMobile ? '' : 'flex'}`}>
           <div ref={videoRef} className={`${isMobile ? 'w-full mt-[150px]' : 'w-[60%] pl-[80px]'} h-full overflow-hidden`}>

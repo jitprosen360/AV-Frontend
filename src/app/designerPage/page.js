@@ -1,13 +1,18 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-
+import MenuAnimation from '../menu';
+import LeftNavInner from '../leftNavinner';
 function DesignerPage() {
    
  
 
     return (
-        <div className="showcase  bg-[url('/designer_bg.jpg')] hidden">
+        <>
+        
+    <MenuAnimation />
+    <LeftNavInner />
+        <div className="showcase  bg-[url('/designer_bg.jpg')]">
             <div className='oneShowcase pl-20 lg:ml-0 '> 
             <div className="flex flex-col lg:flex-row justify-center">
                 <div className='pt-24 lg:pt-24 pr-0 lg:pr-10 sansita text-6xl text-white'>
@@ -25,11 +30,9 @@ function DesignerPage() {
             </div>
             </div>
         </div>
+      
+        </>
     );
 }
 
 export default DesignerPage;
-
-
-
-

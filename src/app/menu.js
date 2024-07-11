@@ -8,13 +8,12 @@ const MenuAnimation = () => {
  
   const openMenuTimeline = () => {
  
-
     gsap.fromTo('.leftPanel',      
       { zIndex:'10', opacity:1  },
       { opacity:0, duration:0.5, zIndex:-10  },
      );
 
-     gsap.fromTo('.intro',      
+     gsap.fromTo('.intro', 
       { opacity:1  },
       { opacity:0, duration:0.5,  },
      );

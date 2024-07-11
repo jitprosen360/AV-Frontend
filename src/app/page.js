@@ -114,6 +114,7 @@ export default function Home() {
 
 
 
+            <LeftNav/>
           <div className="leftPanel2 absolute inset-0 flex items-center w-64 z-40">
             <div className="pl-3">
               <div className='menuContent'>
@@ -216,19 +217,23 @@ export default function Home() {
           <div className="ScrollSection bg-white pt-5 ">
             <LogoScroller />
             <WhatWeDo />
-            <Slider />
-            <KeyFeature />
-            <CardCarousel />
-            <Compare />
-            <Faq />
-            <Howcanhelp />
-
           </div>
+          <Slider />
+          <KeyFeature />
+         
+          <CardCarousel />
+
+         
+
+          <Compare />
+
+          <Faq />
+
+          <Howcanhelp />
 
 
 
-
-
+       
         </div>
       </div>
     </>

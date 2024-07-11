@@ -1286,6 +1286,14 @@ video {
   font-size: 21px;
 }
 
+.text-\[30px\]{
+  font-size: 30px;
+}
+
+.text-\[33px\]{
+  font-size: 33px;
+}
+
 .text-\[35px\]{
   font-size: 35px;
 }
@@ -1304,6 +1312,10 @@ video {
 
 .text-\[50px\]{
   font-size: 50px;
+}
+
+.text-\[60px\]{
+  font-size: 60px;
 }
 
 .text-\[80px\]{
@@ -1344,6 +1356,10 @@ video {
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .font-semibold{
