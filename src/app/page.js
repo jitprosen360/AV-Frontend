@@ -1,5 +1,8 @@
 "use client";
 import React, { useState, useLayoutEffect, useRef } from 'react';
+
+
+
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
@@ -28,6 +31,7 @@ import Slider from './component/slider';
 import Compare from './component/compare';
 import Faq from './component/faq';
 import Howcanhelp from './component/howcanhelp';
+import LeftNav from './leftNav';
 
 const images = {
   Designer: 'designer_box.jpg',
@@ -100,43 +104,13 @@ export default function Home() {
             </div>
           </nav>
 
-          <div className="leftPanel absolute inset-0 flex items-center w-64 h-full z-40">
-            <div className="pl-3 ">
-              <div className="one left_nav">
-                <a>Designer</a>
-              </div>
-              <div className="two left_nav">
-                <a>Casual</a>
-              </div>
-              <div className="three left_nav">
-                <a>Athleisure</a>
-              </div>
-              <div className="four left_nav">
-                <a>Lounge</a>
-              </div>
-              <div className="five left_nav">
-                <a>High Street</a>
-              </div>
-              <div className="six left_nav">
-                <a>Athletic</a>
-              </div>
-              <div className="seven left_nav">
-                <a>Swim</a>
-              </div>
-              <div className="eight left_nav">
-                <a>Denim</a>
-              </div>
-              <div className="nine left_nav">
-                <a>Full-fashion</a>
-              </div>
-              <div className="ten left_nav">
-                <a>Outdoors</a>
-              </div>
-              <div className="eleven left_nav">
-                <a>Others</a>
-              </div>
-            </div>
-          </div>
+           
+
+
+ <LeftNav/>
+
+
+
           <div className="leftPanel2 absolute inset-0 flex items-center w-64 z-40">
             <div className="pl-3">
               <div className='menuContent'>
@@ -212,9 +186,9 @@ export default function Home() {
                   muted
                   playsInline
                 />
-                <div className='intro'>Since 2006, we’ve been manufacturing clothing in Los Angeles for the
+                <div className='intro hidden md:block'>Since 2006, we’ve been manufacturing clothing in Los Angeles for the
                   most innovative designer brands, creating, building, and delivering apparel worth talking about.</div>
-                <div className='introHeading'>
+                <div className='introHeading hidden  md:block'>
                   <div>We produce </div>
                   <div className='text-right'>luxury cloth</div>
                 </div>

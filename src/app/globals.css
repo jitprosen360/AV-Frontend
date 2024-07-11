@@ -2237,9 +2237,8 @@ body {
   .md\:cutout {
     position: absolute;
     width: 38%;
-    z-index: -10;
-    height: 100%;
     background-color: #fff;
+    padding-right: 25px;
   }
 
   .md\:lineKeyLG {
@@ -2382,9 +2381,8 @@ body {
   .lg\:cutout {
     position: absolute;
     width: 38%;
-    z-index: -10;
-    height: 100%;
     background-color: #fff;
+    padding-right: 25px;
   }
 
   .lg\:lineKeyLG {

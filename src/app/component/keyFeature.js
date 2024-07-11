@@ -26,7 +26,7 @@ const KeyFeature = () => {
   }, []);
 
   return (
-    <div className='KeayFeatureSection  text-black pb-[20px]'> 
+    <div className='KeayFeatureSection  text-black pb-[20px] bg-white'> 
     <div className='bg-white'>
       <p className='text-3xl pl-6 py-10 lg:text-[45px] lg:pl-[40px] lg:pt-[175px] lg:pb-[150px] md:pt-[175px] md:pb-[150px] lg:w-1/2 leading-tight gurmukhi'>
         After helping hundreds of brands, there are a few key things we&apos;ve learned are needed to do the best work
