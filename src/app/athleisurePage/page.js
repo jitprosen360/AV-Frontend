@@ -67,11 +67,11 @@ function AthleisurePage() {
                     
                         <div className=' flex justify-center items-center relative bg-white py-5 pl-5 pr-5'>
                             <div class="flex flex-col md:flex-row  ">
-                                <div className='lg:basis-1/2'>
+                                <div className='lg:basis-1/2 pt-[115px]'>
                                     <p className='text-[30px] font-normal text-[#00305F] gurmukhi' >Brand Type: </p>
                                     <p className='text-[60px] font-medium text-[#00305F] gurmukhi' >Athleisure</p>
                                 </div>
-                                <div  className='lg:basis-1/2'>
+                                <div  className='lg:basis-1/2 pt-[85px]'>
                                     <p className='text-[33px] font-medium text-[#00305F] gurmukhi' >A casual clothing brand offers comfortable, everyday wear focusing on practicality and relaxed style. These brands use stretch materials and simple designs, perfect for informal settings. Examples include Vuori and Rhone.</p>
                                 </div>
                             </div>

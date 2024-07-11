@@ -16,13 +16,6 @@ const Slider = () => {
   const cardRefs = useRef([]);
 
   useEffect(() => {
-    gsap.registerPlugin();
-    cardRefs.current.forEach((cardRef, index) => {
-      gsap.set(cardRef, {
-        width: index === 0 ? '70%' : '6.5rem',
-      });
-    });
-
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
@@ -31,6 +24,12 @@ const Slider = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useEffect(() => {
+    gsap.set(cardRefs.current, (index) => ({
+      width: isMobile ? '6.5rem' : index === cards.length - 1 ? '80px' : '6.5rem'
+    }));
+  }, [isMobile]);
 
   useEffect(() => {
     if (selected !== null) {
@@ -43,39 +42,31 @@ const Slider = () => {
       cardRefs.current.forEach((cardRef, index) => {
         if (index !== selected) {
           gsap.to(cardRef, {
-            width: '6.5rem',
+            width: isMobile ? '6.5rem' : index === cards.length - 1 ? '85px' : '6.5rem',
             duration: 1,
             ease: 'power4.inOut',
           });
         }
       });
     }
-  }, [selected]);
+  }, [selected, isMobile]);
 
   const handleClick = (key) => {
     setSelected(key);
   };
 
-  const handleNext = () => {
-    setSelected((prevSelected) => (prevSelected === cards.length - 1 ? 0 : prevSelected + 1));
-  };
-
-  const handlePrev = () => {
-    setSelected((prevSelected) => (prevSelected === 0 ? cards.length - 1 : prevSelected - 1));
-  };
-
   return (
     <div className='main-yell-bg h-full gurmukhi'>
-      <div className='text-left md:pt-[230px] pt-[80px] text-black pb-[120px] md:pl-[50px]  text-[35px] md:text-[55px] font-medium md:w-2/4 w-full'>
+      <div className='md:pt-[230px] pt-[80px] text-black pb-[120px] md:pl-[50px] text-center text-[35px] md:text-[55px] font-medium md:w-2/4 w-full'>
         Our 5 steps end-to-end process created with emerging brands in mind
       </div>
       <div className='hidden md:block'>
-        <div className='h-screen flex items-center justify-center '>
+        <div className='h-screen flex items-center justify-center'>
           {cards.map((card, key) => (
             <div
               key={key}
               ref={el => cardRefs.current[key] = el}
-              className={`${key === 0 ? 'w-70' : 'w-22'} cursor-pointer ml-custom relative  `}
+              className={`${key === 0 ? 'w-70' : key === cards.length - 1 ? 'w-[85px]' : 'w-22'} cursor-pointer ml-custom relative`}
               onClick={() => handleClick(key)}
             >
               <Card card={card} selected={selected === key} isMobile={isMobile} index={key} />

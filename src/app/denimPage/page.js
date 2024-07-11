@@ -1,14 +1,36 @@
 "use client"
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import MenuAnimation from '../menu';
 import LeftNavInner from '../leftNavinner';
 import TopNav from '../topNav';
 import CustomCursor from '../component/customCursor';
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
+ 
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
 function DenimPage() {
     const eightShowcaseRef = useRef(null);
     const compresDivRef = useRef(null);
     const compresTextRef = useRef(null);
+    const main = useRef();
+    const smoother = useRef();
+
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            smoother.current = ScrollSmoother.create({
+                smooth: 2,
+                effects: true,
+            });
+
+        }, main);
+        return () => ctx.revert();
+
+
+    }, []);
 
 
     // useEffect(() => {
@@ -78,10 +100,12 @@ function DenimPage() {
 
     return (
         <>
-        <CustomCursor />
-         <TopNav/>
-        <LeftNavInner />
-        <div ref={eightShowcaseRef} className="showcase   bg-[url('/denim_bg.jpg')] ">
+         <CustomCursor />
+            <div id="smooth-wrapper" ref={main}>
+                <div id="smooth-content">
+       <TopNav />
+       <LeftNavInner />
+        <div ref={eightShowcaseRef} className="ShowCaseSection   bg-[url('/denim_bg.jpg')] ">
             
             <div className='eightShowcase'> 
             <div className="flex flex-col lg:flex-row justify-center">
@@ -89,9 +113,9 @@ function DenimPage() {
                 Denim
                 </div>
                 <div className='pt-20 lg:pt-20'>
-                    <div className='compresCover'>
-                        <div ref={compresDivRef} className='compresDiv'>
-                            <div className="compresImg bg-[url('/denim_box.jpg')]">
+                    <div className='compresCoverSM lg:compresCover '>
+                        <div ref={compresDivRef} className='compresDivSM right-0 mr-4 lg:compresDiv'>
+                            <div className="compresImgSM lg:compresImg bg-[url('/denim_box.jpg')]  bg-contain">
                             </div>
                         </div>
                     </div>
@@ -100,6 +124,21 @@ function DenimPage() {
             </div>
             </div>
 
+        </div>
+        <div className=' flex justify-center items-center relative bg-white py-5 pl-5 pr-5'>
+                            <div class="flex flex-col md:flex-row  ">
+                                <div className='lg:basis-1/2 pt-[115px]'>
+                                    <p className='text-[30px] font-normal text-[#00305F] gurmukhi' >Brand Type: </p>
+                                    <p className='text-[60px] font-medium text-[#00305F] gurmukhi' >Denim</p>
+                                </div>
+                                <div  className='lg:basis-1/2 pt-[85px]'>
+                                    <p className='text-[33px] font-medium text-[#00305F] gurmukhi' >A premium denim brand offering high-quality, hand-dyed jeans, from indigo to distressed, crafted from the finest textiles, combining timeless style with modern fits while maintaining sustainable practices.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+        </div>
         </div>
         </>
     );

@@ -32,17 +32,36 @@ const Card = ({ card, selected, isMobile , index  }) => {
     gsap.set(videoRef.current, { x: 0, opacity: 1 });
     gsap.set(textRef.current, { x: 0, opacity: 1 });
   }, []);
-
+ // Positioning logic based on index for desktop view
+ const getTitlePosition = (index) => {
+  if (!isMobile) {
+    switch (index) {
+      case 0:
+        return 'mt-[107px] pl-[13px]';
+      case 1:
+        return 'mt-[112px] pl-[8px]';
+      case 2:
+        return 'mt-[106px] pl-[19px]';
+      case 3:
+        return 'mt-[120px] l-[22px]';
+      case 4:
+        return 'mt-[123px] ml-[-5px]';
+      
+    }
+  } else {
+    return ''; // No specific positioning for mobile
+  }
+};
   return (
     <div className={`relative overflow-hidden md:border-tr-white rounded-md ${index === 0 ? 'md:border-solid md:border-l' : ''}`}>
       <div ref={cardRef} className={`md:h-screen rounded-md ${selected ? 'h-40' : 'h-12'} ${card.bgCardColor}`}>
         <div className="flex">
           {/* Right Side (cardTitle) */}
-          <div className={`absolute ${card.textColor} ${isMobile ? 'w-1/2 left-0 mt-[35px] text-left pl-[30px]' : 'mt-[100px]'}`}>
-            <h2 className=' md:rotate-90'>{card.cardTitle}</h2>
+          <div className={`absolute font-semibold text-[16px] roboto ${card.textColor} ${getTitlePosition(index)} ${isMobile ? 'w-1/2 mt-[35px] left-0 text-left pl-[30px]' : 'mt-[100px]'}`}>
+            <h2 className=' md:rotate-270 roboto'>{card.cardTitle}</h2>
           </div>
-          {/* Left Side (cardNo) */}
-          <span className={`pl-[30px] font-semibold  absolute ${card.textColor} ${isMobile ? 'w-1/2 right-0 text-right pr-[25px] pt-[35px]' : 'pt-[45px]'}`}>{card.cardNo}</span>
+          {/* Left Side (cardNo) */} 
+          <span className={`pl-[30px] font-semibold text-[20px]  absolute ${card.textColor} ${isMobile ? 'w-1/2 right-0 text-right  pr-[25px] pt-[35px]' : 'pt-[45px]'}`}>{card.cardNo}</span>
         </div>
         <div className={`${isMobile ? '' : 'flex'}`}>
           <div ref={videoRef} className={`${isMobile ? 'w-full mt-[150px]' : 'w-[60%] pl-[80px]'} h-full overflow-hidden`}>
