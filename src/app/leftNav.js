@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 
 
- import DesignerPage from './pages/designerPage';
+import DesignerPage from './pages/designerPage';
 import CasualPage from './pages/casualPage';
 import AthleisurePage from './pages/athleisurePage';
 import LoungePage from './pages/LoungePage';
