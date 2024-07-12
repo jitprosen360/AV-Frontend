@@ -7,6 +7,7 @@ import TopNav from '../topNav';
 import CustomCursor from '../component/customCursor';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import LeftNav2 from '../leftNav2';
  
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -103,6 +104,7 @@ function FullfashionPage() {
             <div id="smooth-wrapper" ref={main}>
                 <div id="smooth-content">
        <TopNav />
+       <LeftNav2/>
        <LeftNavInner />
         <div ref={nineShowcaseRef} className="ShowCaseSection   bg-[url('/fullfashion_bg.jpg')] ">
            <div className='nineShowcase'> 
