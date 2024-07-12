@@ -8,6 +8,7 @@ import CustomCursor from '../component/customCursor';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import LeftNav2 from '../leftNav2';
+import SquerAnimation from '../squerAnimation';
  
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -101,6 +102,7 @@ function FullfashionPage() {
     return (
         <>
        <CustomCursor />
+       <SquerAnimation/>
             <div id="smooth-wrapper" ref={main}>
                 <div id="smooth-content">
        <TopNav />
