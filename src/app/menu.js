@@ -133,6 +133,14 @@ const MenuAnimation = () => {
     );
  
 
+    gsap.fromTo('.menuContentCover',         
+      { left:-300},
+      { left:5, duration:1, delay:1   }
+    );
+
+
+    
+
     gsap.fromTo('.leftBar', {
       zIndex: '30', position: 'absolute', height: '100vh', left: '0', width: '0px', backgroundColor: "#fff",
     }, {
@@ -154,7 +162,7 @@ const MenuAnimation = () => {
     gsap.fromTo('.bottomBar', {
       position: 'absolute', bottom: '0', height: '0vh', width: '100vw', backgroundColor: "#fff",
     }, {
-      delay: 0.5, zIndex: '30', position: 'absolute', bottom: '0', height: '50vh', width: '100vw', backgroundColor: "#fff", duration: 1, ease: "power4.in",
+      delay: 0.5, zIndex: '30', position: 'absolute', bottom: '0', height: '30vh', width: '100vw', backgroundColor: "#fff", duration: 1, ease: "power4.in",
     });
 
     gsap.to('.openMenubtn', {
@@ -167,13 +175,21 @@ const MenuAnimation = () => {
       }
     });
 
-    
+
   }
 
   const closeMenuMobile = () => {
     gsap.to('.leftPanel',    
       { left:'5px' },
     );
+
+    gsap.fromTo('.menuContentCover',    
+      { left:5,  },
+      { left:-300,duration:1, },
+    );
+
+
+
     gsap.fromTo('.leftBar', {
       position: 'absolute', height: '100vh', left: '0', backgroundColor: "#fff", width: '2vw'
     }, {
@@ -190,7 +206,7 @@ const MenuAnimation = () => {
       delay: 0.5, zIndex: '30', position: 'absolute', top: '0', height: '0vh', width: '100vw', backgroundColor: "#fff", duration: 1.5, ease: "power3.out",
     });
     gsap.fromTo('.bottomBar', {
-      position: 'absolute', bottom: '0', height: '50vh', width: '100vw', backgroundColor: "#fff",
+      position: 'absolute', bottom: '0', height: '30vh', width: '100vw', backgroundColor: "#fff",
     }, {
       delay: 0.5, zIndex: '30', position: 'absolute', bottom: '0', height: '0vh', width: '100vw', backgroundColor: "#fff", duration: 1.5, ease: "power3.out",
     });
@@ -237,6 +253,10 @@ const MenuAnimation = () => {
     <>
       <a className="openMenubtn" onClick={handleMenuClick} style={{ opacity: 1 }}>Menu</a>
       <a className="closeMenubtn" onClick={handleMenuClick} style={{ display: 'none', opacity: 0 }}>Close <span>X</span></a>
+
+
+
+      
     </>
   );
 };

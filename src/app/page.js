@@ -90,7 +90,7 @@ export default function Home() {
   return (
     <>
       <CustomCursor />
-     <SquerAnimation/>
+      <SquerAnimation />
       <div id="smooth-wrapper" ref={main}>
         <div id="smooth-content">
           <nav className="absolute w-full z-50 mt-3">
@@ -99,19 +99,38 @@ export default function Home() {
                 <MenuAnimation />
               </div>
               <div className="logo w-24 h-12 mx-auto flex items-center justify-center">
-              <Link href="/">
-            <img src='./logo_av.svg' alt="Logo" className="cursor-pointer" />
-          </Link>
+                <Link href="/">
+                  <img src='./logo_av.svg' alt="Logo" className="cursor-pointer" />
+                </Link>
               </div>
               <div className="absolute right-0 mr-4 h-12 flex items-center justify-center">
-              <a href="#" className="schduleSM lg:schdule">Schedule a call</a>
+                <a href="#" className="schduleSM lg:schdule">Schedule a call</a>
               </div>
             </div>
           </nav>
 
 
-
-
+          <div className='menuContentCover lg:hidden'>
+            <div className='menuContent'>
+              <li ref={el => menuItems.current[0] = el} className="menuItem">
+                What We Do
+                <div className="underline"></div>
+              </li>
+              <li ref={el => menuItems.current[1] = el} className="menuItem">
+                About Us
+                <div className="underline"></div>
+              </li>
+              <li ref={el => menuItems.current[2] = el} className="menuItem">
+                Latest News
+                <div className="underline"></div>
+              </li>
+              <li ref={el => menuItems.current[3] = el} className="menuItem">
+                Get in Touch
+                <div className="underline"></div>
+              </li>
+            </div>
+          </div>
+          
           <LeftNav />
 
 
@@ -145,7 +164,7 @@ export default function Home() {
                   onMouseLeave={() => setHoveredItem(null)}
                   className="left_nav"
                 >
-                   <Link href={`/${item.toLowerCase()}Page`}>{item}</Link>
+                  <Link href={`/${item.toLowerCase()}Page`}>{item}</Link>
                 </div>
               ))}
             </div>
@@ -181,7 +200,7 @@ export default function Home() {
                     src={images[item]}
                     alt={item}
                     className={`cornerBox absolute w-64 h-auto transition-opacity duration-300 ${hoveredItem === item ? 'opacity-100' : 'opacity-0'}`}
-                    style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)',  }}
+                    style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)', }}
                   />
                 ))}
               </div>

@@ -34,9 +34,12 @@ body {
 
 @layer utilities {
   * {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
   }
+
   body {
     cursor: none;
   }
@@ -201,7 +204,7 @@ body {
   }
 
   .leftPanel a {
-    color:#FFF;
+    color: #FFF;
     font-size: 14px;
     border-radius: 50px;
     padding: 6px 18px 7px;
@@ -242,7 +245,7 @@ body {
     width: 100%;
     position: absolute;
     background-size: cover;
-   
+
 
   }
 
@@ -270,8 +273,8 @@ body {
   .cornerShowcase {
     position: absolute;
     /* width:calc(32vw - 17px); */
-    width:32vw;
-    right:34vw;
+    width: 32vw;
+    right: 34vw;
     top: 10vh;
     height: 80vh;
     overflow: hidden;
@@ -311,6 +314,7 @@ body {
     height: 500px;
     border-radius: 7px;
   }
+
   .compresDivSM {
     overflow: hidden;
     position: absolute;
@@ -329,7 +333,7 @@ body {
     right: 0;
     border-radius: 7px;
     background-color: #FF6D3A;
- 
+
   }
 
   .compresImgSM {
@@ -369,7 +373,7 @@ body {
     height: 500px;
     background-position: center center;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     border-radius: 7px;
     background-color: #FF6D3A;
   }
@@ -379,10 +383,10 @@ body {
     height: 250px;
     background-position: center center;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     border-radius: 7px;
     background-color: #FF6D3A;
-    right:0;
+    right: 0;
   }
 
 
@@ -554,15 +558,36 @@ body {
     line-height: 1;
   }
 
-  .menuContent li {
-    color: #000;
+
+
+
+  .menuContentCover {
+    position: absolute;
+    top: 72vh;
+    height: 50vh;
+    width: 100%;
+    z-index: 50;
+    left: -300px;
   }
+
+  .menuContentCover .menuContent li {
+    color: #000;
+    padding-left: 15px;
+    font-size: 22px;
+  }
+
+
+
 
   .menuContent {
     list-style: none;
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
+  }
+
+  .menuContent li {
+    color: #000;
   }
 
   .menuItem {
@@ -661,13 +686,13 @@ body {
 
   .cutout {
     position: absolute;
-    width: 38%;    
+    width: 38%;
     background-color: #fff;
     padding-right: 25px;
     border-left: 1px solid #8571FD;
   }
 
- 
+
 
 
 
@@ -739,94 +764,121 @@ body {
   .gurmukhi {
     font-family: "Anek Gurmukhi", "sans-serif";
   }
-  .roboto{
+
+  .roboto {
     font-family: "Roboto", sans-serif;
   }
-  
+
   .main-yell-bg {
-    background-color : #FBFD5D;
-    height:1450px;
+    background-color: #FBFD5D;
+    height: 1450px;
   }
-  .ml-custom{
+
+  .ml-custom {
     margin-left: -20px;
   }
-  
+
   .rotate-270 {
     transform: rotate(270deg);
   }
-  .w-22{
+
+  .w-22 {
     width: 6.5rem;
   }
-  .w-70{
+
+  .w-70 {
     width: 70%;
-   
+
   }
-  .w-90{
+
+  .w-90 {
     width: 88%;
-   
+
   }
-  .h-250{
+
+  .h-250 {
     height: 53rem;
   }
-  .h-40{
+
+  .h-40 {
     height: 40rem;
   }
-  .w-50{
+
+  .w-50 {
     width: 22rem;
   }
+
   .box-div {
     width: 100%;
     margin: 0 auto;
   }
-  
-  .bg-secondgrid {background-color: #EFFDFF;
-  
+
+  .bg-secondgrid {
+    background-color: #EFFDFF;
+
   }
+
   .alllist ul li {
-    display: grid; /* Flex container */
-    align-items: center; /* Center items vertically */
+    display: grid;
+    /* Flex container */
+    align-items: center;
+    /* Center items vertically */
     height: 104px;
-    border-top: 1px solid #A2D2F0; /* Top border */
+    border-top: 1px solid #A2D2F0;
+    /* Top border */
   }
-  
+
   .alllist ul li:nth-child(1) {
     height: 235px;
     border: 0;
   }
-  
-  .last-border ul { border-left: 1px solid #A2D2F0 }
+
+  .last-border ul {
+    border-left: 1px solid #A2D2F0
+  }
+
   .custom-orange {
     color: #FF6D3A;
   }
-  .fill-star{
+
+  .fill-star {
     fill: #FFAC1A;
   }
+
   .faq {
     width: 80%;
     margin: 0 auto;
   }
+
   .faq ul li {
-    border-bottom : 1px solid #000;
+    border-bottom: 1px solid #000;
   }
+
   .help {
     background-color: #000;
   }
+
   .cborder {
-    border-bottom : 1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
+
   .cborder-top {
-    border-top : 1px solid #fff;
+    border-top: 1px solid #fff;
   }
-  
+
   .custom-rotation {
     transform: rotate(-45deg);
   }
-  .size-2{
+
+  .size-2 {
     width: 1rem;
     height: 1rem;
   }
 
-  .border-r-customPurple { border-left: 2px solid #8571FD;}
+  .border-r-customPurple {
+    border-left: 2px solid #8571FD;
+  }
+
   .border-tr-white {
     border-top: 4px solid #FFF;
     border-right: 4px solid #FFF;
@@ -837,12 +889,26 @@ body {
     border-left: 4px solid #FFF;
     border-bottom: 4px solid #FFF;
   }
-  
-  .card-bg-1 { background-color: #F6F6F6 }
-  .card-bg-2 { background-color: #FFEBEB }
-  .card-bg-3 { background-color: #ffffff  }
-  .card-bg-4 { background-color: #CFFEFB }
-  .card-bg-5 { background-color: #EAAEFF }
+
+  .card-bg-1 {
+    background-color: #F6F6F6
+  }
+
+  .card-bg-2 {
+    background-color: #FFEBEB
+  }
+
+  .card-bg-3 {
+    background-color: #ffffff
+  }
+
+  .card-bg-4 {
+    background-color: #CFFEFB
+  }
+
+  .card-bg-5 {
+    background-color: #EAAEFF
+  }
 
   /* new css for fix and responsive */
 
@@ -851,15 +917,43 @@ body {
 
 
 
-.loaderstyle{ position: absolute; width: 1px; height: 80vh; left: 50%;}
+  .loaderstyle {
+    position: absolute;
+    width: 1px;
+    height: 80vh;
+    left: 50%;
+  }
 
 
 
 
-.leftBarLoader{ height: 100vh; width: 34vw; position: absolute; z-index: 999;}
-.righttBarLoader{  height: 100vh; width: 34vw; position: absolute; z-index: 999;}
-.topBarLoader{ height: 10vh; width: 100vw; position: absolute;  z-index: 999;}
-.bottomBarLoaderP{height: 10vh; width: 100vw;  position: absolute; z-index: 999;}
+  .leftBarLoader {
+    height: 100vh;
+    width: 34vw;
+    position: absolute;
+    z-index: 999;
+  }
+
+  .righttBarLoader {
+    height: 100vh;
+    width: 34vw;
+    position: absolute;
+    z-index: 999;
+  }
+
+  .topBarLoader {
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 999;
+  }
+
+  .bottomBarLoaderP {
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 999;
+  }
 
 
 

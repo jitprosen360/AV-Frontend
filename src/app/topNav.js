@@ -156,6 +156,8 @@ function TopNav() {
       { left:-250 },
     );
  
+  
+
     gsap.fromTo('.leftPanel2', { 
       marginLeft:'-250px'
     }, {
@@ -211,7 +213,7 @@ function TopNav() {
       {marginLeft:'15px',}, 
       {delay:0.2, marginLeft:'-250px', duration:0.4,});
  
-
+     
 
 
     gsap.fromTo('.leftBar', {
