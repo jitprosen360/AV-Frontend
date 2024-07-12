@@ -39,6 +39,7 @@ function AthleisurePage() {
     return (
         <>
             <CustomCursor />
+            <SquerAnimation/>
             <div id="smooth-wrapper" ref={main}>
                 <div id="smooth-content">                                                        
                     <TopNav />
