@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useLayoutEffect, useRef } from 'react';
-
+import Link from 'next/link';
 
 
 import { gsap } from 'gsap';
@@ -98,7 +98,9 @@ export default function Home() {
                 <MenuAnimation />
               </div>
               <div className="logo w-24 h-12 mx-auto flex items-center justify-center">
-                <img src='./logo_av.svg' alt="Logo" />
+              <Link href="/">
+            <img src='./logo_av.svg' alt="Logo" className="cursor-pointer" />
+          </Link>
               </div>
               <div className="absolute right-0 mr-4 h-12 flex items-center justify-center">
                 <a href="#" className="schdule">Schedule a call</a>
