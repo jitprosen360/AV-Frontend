@@ -9,7 +9,7 @@ const Compare = () => {
   
         <div className='text-[20px] text-[#00305F] gurmukhi'>How do we compare?</div>
 
-        <div className='text-[50px] text-[#00305F] gurmukhi mt-[35px] w-[42%] font-medium leading-tight'>We measure our value in customers feedback</div>
+        <div className='text-[40px] md:text-[50px] text-[#00305F] gurmukhi mt-[35px] w-[100%] md:w-[42%] font-medium leading-tight ' >We measure our value in customers feedback</div>
 
 
             <div class="flex flex-row pt-[80px]">
