@@ -15,43 +15,11 @@ const images = {
     Outdoors: 'outdoors_box.jpg'
   };
 
-
-
 function SquerAnimation() {
-
-
-
 
     const [hoveredItem, setHoveredItem] = useState(null);
     const menuItems = useRef([]);
   
-
-    
-    // useLayoutEffect(() => { 
-    //     menuItems.current.forEach((item) => {
-    //       const underline = item.querySelector('.underline');
-    //       const textWidth = item.offsetWidth;
-  
-  
-    //       item.addEventListener('mouseenter', () => {
-    //         gsap.fromTo(underline,
-    //           { width: '0', duration: 0.5, left: 0 },
-    //           { width: textWidth, duration: 0.5, left: 0 });
-    //       });
-  
-    //       item.addEventListener('mouseleave', () => {
-    //         gsap.fromTo(underline,
-    //           { width: textWidth, duration: 0.5, right: 0 },
-    //           { width: '0', duration: 0.5, right: 0 }
-    //         );
-    //       });
-    //     });
-   
-  
-    // }, []);
-
-
- 
 
   return (
     <>
@@ -85,7 +53,7 @@ function SquerAnimation() {
                     src={images[item]}
                     alt={item}
                     className={`cornerBox absolute w-64 h-auto transition-opacity duration-300 ${hoveredItem === item ? 'opacity-100' : 'opacity-0'}`}
-                    style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
+                    style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)',zIndex:100, }}
                   />
                 ))}
               </div>

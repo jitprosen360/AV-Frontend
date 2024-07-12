@@ -178,7 +178,7 @@ export default function Home() {
                     src={images[item]}
                     alt={item}
                     className={`cornerBox absolute w-64 h-auto transition-opacity duration-300 ${hoveredItem === item ? 'opacity-100' : 'opacity-0'}`}
-                    style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
+                    style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)',  }}
                   />
                 ))}
               </div>

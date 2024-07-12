@@ -38,13 +38,17 @@ function AthleisurePage() {
 
     return (
         <>
- <CustomCursor />
+ <CustomCursor /> 
+   
+
+
             <div id="smooth-wrapper" ref={main}>
                 <div id="smooth-content">
-                   
+                    <LeftNav2/>
+  <SquerAnimation />
                     <TopNav />
-                 <LeftNav2/>
-                    <SquerAnimation />
+              
+                  
                     <LeftNavInner />
                     <div ref={threeShowcaseRef} className="ShowCaseSection bg-[url('/athleisure_bg.jpg')] ">
                         <div className='threeShowcase'>
