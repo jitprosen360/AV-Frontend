@@ -60,7 +60,7 @@ const Faq = () => {
             >
               <div className="flex items-center  pb-10">
                 <svg
-                  className="w-[20px] h-[20px] text-black mr-2"
+                  className="md:w-[20px] md:h-[20px] w-[50px] h-[50px] text-black mr-2"
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -83,7 +83,7 @@ const Faq = () => {
         ))}
       </ul>
 
-      <div className='text-[36px] text-black text-center font-bold pt-24 gurmukhi'>See more FAQs</div>
+      <div className='text-[36px] md:text-[30px] text-black text-center font-bold pt-24 gurmukhi'>See more FAQs</div>
       </div>
     </div>
   );

@@ -53,8 +53,8 @@ const Card = ({ card, selected, isMobile , index  }) => {
   }
 };
   return (
-    <div className={`relative overflow-hidden md:border-tr-white rounded-md ${index === 0 ? 'md:border-solid md:border-l' : ''}`}>
-      <div ref={cardRef} className={`md:h-screen rounded-md ${selected ? 'h-40' : 'h-12'} ${card.bgCardColor}`}>
+    <div className={`relative overflow-hidden md:border-tr-white mt-[-2px] rounded-md ${index === 0 ? 'md:border-solid md:border-l ' : ''}`}>
+      <div ref={cardRef} className={`md:h-screen rounded-md ${selected ? 'h-40' : 'h-12 '} ${card.bgCardColor}`}>
         <div className="flex">
           {/* Right Side (cardTitle) */}
           <div className={`absolute font-semibold text-[16px] roboto ${card.textColor} ${getTitlePosition(index)} ${isMobile ? 'w-1/2 mt-[35px] left-0 text-left pl-[30px]' : 'mt-[100px]'}`}>

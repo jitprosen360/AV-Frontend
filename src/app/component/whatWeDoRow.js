@@ -79,9 +79,9 @@ function WhatWeRow({ rowClass, videoSrc, title, description }) {
 
     <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 whtdo border-t-2 py-12  ${rowClass}`} ref={heightsDivRef}>
       <div className=" flex flex-col justify-end">
-        <p className="text-[39px] text-black font-light pl-4 lg:pl-10	leading-none pb-[30px] pt-[70px]">{title}</p>
+        <p className="text-[29px] md:text-[39px] text-black font-light pl-4 lg:pl-10 	leading-none pb-[30px] pt-[70px]">{title}</p>
       </div>
-      <div className="p-4 flex flex-col justify-end ">
+      <div className="p-4 flex flex-col justify-end">
         <div className='md:revelCover'>
           <div ref={compresDivRef} className='  md:revelDiv lg:revelDiv '>
             <div className='md:revelImg lg:revelImg'>
@@ -97,7 +97,7 @@ function WhatWeRow({ rowClass, videoSrc, title, description }) {
           </div>
         </div>
       </div>
-      <div className="p-4 flex flex-col justify-end">
+      <div className="p-4 flex flex-col justify-end sm:text-cener">
         <p className="text-lg text-black ">{description}</p>
       </div>
     </div>

@@ -46,7 +46,7 @@ const CardCarousel = () => {
     ],
   };
 
-  const colors = ['#FFC0CB', '#ADD8E6', '#98FB98', '#FFA07A', '#FFFFE0', '#FFC0CB', '#ADD8E6', '#98FB98'];
+  const colors = ['#FFF6A1', '#FFE1DB', '#DBFBFF', '#FFF6A1', '#FFE1DB', '#DBFBFF', '#FFF6A1', '#FFE1DB'];
 
   const cards = [
     { id: 0, content: 'I’m your biggest fan and love AVmade.com, but I\'m looking to create products that are not available on your marketplace. Can you guys please help us? It will mean the world to us. Thanks.', name: 'Kate A', imgSrc: 'profile1.jpg', width: '500px', height: '470px', bg: colors[0] },
@@ -60,9 +60,9 @@ const CardCarousel = () => {
   ];
 
   return (
-    <div className=" mx-auto px-12 pb-40 clientsays">
+    <div className=" mx-auto px-12 pb-40  clientsays ">
 
-<p className=' text-5xl py-36 lg:w-96 mx-auto'>What Our Clients <br/> Say About Us</p>
+<p className=' text-[40px] md:text-[50px] font-medium py-36 md:w-2/4 mx-auto'>What Our Clients <br/> Say About Us</p>
 
       <Slider {...settings}>
         {cards.map((card) => (
