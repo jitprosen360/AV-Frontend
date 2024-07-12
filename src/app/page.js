@@ -92,8 +92,8 @@ export default function Home() {
      
       <div id="smooth-wrapper" ref={main}>
         <div id="smooth-content">
-          <nav className="absolute container z-50 mt-3 bg-black">
-            <div className="relative container mx-auto flex items-center justify-between">
+          <nav className="absolute w-full z-50 mt-3">
+            <div className="relative w-full mx-auto flex items-center justify-between">
               <div className="absolute left-0 h-12 flex items-center justify-center">
                 <MenuAnimation />
               </div>
@@ -154,7 +154,7 @@ export default function Home() {
               <div className="righttBar"></div>
               <div className="topBar"></div>
               <div className="bottomBar"></div>
-              <div className="cornerShowcase z-50">
+              <div className="cornerShowcase z-50 ">
 
                 <div className="absolute top-0 left-0 z-50">
                   <img src="corner-left-top-2.svg" alt="top-left corner" className="w-8 h-8" />
