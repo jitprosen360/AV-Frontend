@@ -51,9 +51,11 @@ const MenuAnimation = () => {
     }, {
       delay: 1.1, marginLeft: '15px', duration: 1, ease: "power4.out",
     });
+
     gsap.fromTo('.cornerShowcase',
       { display: 'none' },
       { delay: 1.5, display: 'block' });
+      
     gsap.to('.openMenubtn', {
       opacity: 0,
       duration: 0.5,
@@ -109,6 +111,8 @@ const MenuAnimation = () => {
     gsap.fromTo('.leftPanel2',
       { marginLeft: '15px', },
       { delay: 0.2, marginLeft: '-250px', duration: 0.4, });
+
+
     gsap.to('.closeMenubtn', {
       opacity: 0,
       duration: 0.5,
@@ -153,6 +157,17 @@ const MenuAnimation = () => {
       delay: 0.5, zIndex: '30', position: 'absolute', bottom: '0', height: '50vh', width: '100vw', backgroundColor: "#fff", duration: 1, ease: "power4.in",
     });
 
+    gsap.to('.openMenubtn', {
+      opacity: 0,
+      duration: 0.5,
+      onComplete: () => {
+        gsap.set('.openMenubtn', { display: 'none' });
+        gsap.set('.closeMenubtn', { display: 'block' });
+        gsap.to('.closeMenubtn', { opacity: 1, duration: 0.5 });
+      }
+    });
+
+    
   }
 
   const closeMenuMobile = () => {
@@ -179,6 +194,18 @@ const MenuAnimation = () => {
     }, {
       delay: 0.5, zIndex: '30', position: 'absolute', bottom: '0', height: '0vh', width: '100vw', backgroundColor: "#fff", duration: 1.5, ease: "power3.out",
     });
+
+
+    gsap.to('.closeMenubtn', {
+      opacity: 0,
+      duration: 0.5,
+      onComplete: () => {
+        gsap.set('.closeMenubtn', { display: 'none' });
+        gsap.set('.openMenubtn', { display: 'block' });
+        gsap.to('.openMenubtn', { opacity: 1, duration: 0.5 });
+      }
+    });
+
 
   }
 

@@ -188,6 +188,17 @@ function TopNav() {
       delay: 0.5, zIndex: '30', position: 'absolute', bottom: '0', height: '10vh', width: '100vw', backgroundColor: "#fff", duration: 1, ease: "power4.in",
     });
 
+    gsap.to('.openMenubtn', {
+      opacity: 0,
+      duration: 0.5,
+      onComplete: () => {
+        gsap.set('.openMenubtn', { display: 'none' });
+        gsap.set('.closeMenubtn', { display: 'block' });
+        gsap.to('.closeMenubtn', { opacity: 1, duration: 0.5 });
+      }
+    });
+
+
   }
 
   const closeMenuMobile = () => {
@@ -224,6 +235,17 @@ function TopNav() {
       delay: 0.5, zIndex: '30', position: 'absolute', bottom: '0', height: '0vh', width: '100vw', backgroundColor: "#fff", duration: 1.5, ease: "power3.out",
     });
 
+    gsap.to('.closeMenubtn', {
+      opacity: 0,
+      duration: 0.5,
+      onComplete: () => {
+        gsap.set('.closeMenubtn', { display: 'none' });
+        gsap.set('.openMenubtn', { display: 'block' });
+        gsap.to('.openMenubtn', { opacity: 1, duration: 0.5 });
+      }
+    });
+
+    
   }
 
  
@@ -274,7 +296,7 @@ function TopNav() {
           </Link>
               </div>
               <div className="absolute right-0 mr-4 h-12 flex items-center justify-center">
-                <a href="#" className="schdule">Schedule a call</a>
+                <a href="#" className="schduleSM lg:schdule">Schedule a call</a>
               </div>
             </div>
           </nav>

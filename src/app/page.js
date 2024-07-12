@@ -104,7 +104,7 @@ export default function Home() {
           </Link>
               </div>
               <div className="absolute right-0 mr-4 h-12 flex items-center justify-center">
-                <a href="#" className="schdule">Schedule a call</a>
+              <a href="#" className="schduleSM lg:schdule">Schedule a call</a>
               </div>
             </div>
           </nav>
