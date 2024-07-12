@@ -22,10 +22,10 @@ const Faq = () => {
   };
 
   return (
-    <div className=' pt-[190px] pb-[190px] bg-white'>
+    <div className=' pt-[100px] pb-[100px] md:pt-[190px] md:pb-[190px] bg-white'>
     <div className='faq'>
-      <div className='text-[50px] text-black text-center font-extrabold'>FAQ</div>
-      <p className='text-[20px] text-black text-center font-bold'>Learn more!</p>
+      <div className='text-[40px] md:text-[50px] text-black text-center font-extrabold'>FAQ</div>
+      <p className='text-[16px] md:text-[20px] text-black text-center font-bold'>Learn more!</p>
 
       <ul className=" mt-20  text-[21px] roboto">
         {faqItems.map((item, index) => (
@@ -83,7 +83,7 @@ const Faq = () => {
         ))}
       </ul>
 
-      <div className='text-[36px] md:text-[30px] text-black text-center font-bold pt-24 gurmukhi'>See more FAQs</div>
+      <div className='text-[20px] md:text-[36px] text-black text-center font-bold pt-24 gurmukhi'>See more FAQs</div>
       </div>
     </div>
   );

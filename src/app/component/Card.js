@@ -71,7 +71,7 @@ const Card = ({ card, selected, isMobile , index  }) => {
             </video>
           </div>
           <div ref={textRef} className={`flex items-center ${isMobile ? 'w-full h-[300px] text-center' : 'w-[40%] h-screen'} p-4 overflow-hidden `}>
-            <p className="text-[#00305F] text-[20px] overflow-hidden h-[120px] w-[300px] pl-[25px]">
+            <p className="text-[#00305F] text-[20px] overflow-hidden h-[120px] w-full md:w-[300px] pl-[25px]">
               {card.content}
             </p>
           </div>

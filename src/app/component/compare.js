@@ -5,13 +5,13 @@ const Compare = () => {
     
     return(<>
     
-    <div className="compare pt-[80px] pl-[20px] pr-[20px] md:pl-[70px] md:pr-[70px] lg:pl-[70px] lg:pr-[70px] xl:pl-[70px] xl:pr-[70px] bg-white ">
+    <div className="w-screen overflow-x-scroll compare pt-[80px] pl-[20px] pr-[20px] md:pl-[70px] md:pr-[70px] lg:pl-[70px] lg:pr-[70px] xl:pl-[70px] xl:pr-[70px] bg-white ">
   
         <div className='text-[20px] text-[#00305F] gurmukhi'>How do we compare?</div>
 
         <div className='text-[40px] md:text-[50px] text-[#00305F] gurmukhi mt-[35px] w-[100%] md:w-[42%] font-medium leading-tight ' >We measure our value in customers feedback</div>
 
-
+        <div className='overflow-x-scroll'>
             <div class="flex flex-row pt-[80px]">
                 
                 <div class="sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4">
@@ -239,7 +239,7 @@ const Compare = () => {
                     </div>
                 </div>
             </div>
-
+            </div>
     </div>
 
     

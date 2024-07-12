@@ -5,7 +5,7 @@ const Howcanhelp = () => {
 
     return(<>
 
-        <div className='help pt-[150px] pb-[135px] pl-[50px] pr-[50px] gurmukhi'>
+        <div className='help pt-[100px] pb-[100px] md:pt-[150px] md:pb-[135px] pl-[50px] pr-[50px] gurmukhi'>
             <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
                 <div className='text-white text-[40px] md:text-[80px]'>How can <br />we help?</div>
                 <div>
@@ -15,7 +15,7 @@ const Howcanhelp = () => {
                             <div class="flex items-center space-x-4 rtl:space-x-reverse">
                             
                                 <div class="flex-1 min-w-0">
-                                    <p class="text-sm text-white font-medium text-gray-900 truncate dark:text-white">
+                                    <p class="text-sm text-white font-medium truncate dark:text-white">
                                     Work together
                                     </p>
                                   
@@ -50,7 +50,7 @@ const Howcanhelp = () => {
                             <div class="flex items-center space-x-4 rtl:space-x-reverse">
                                 
                                 <div class="flex-1 min-w-0">
-                                    <p class="text-sm text-white font-medium text-gray-900 truncate dark:text-white">
+                                    <p class="text-sm text-white font-medium truncate dark:text-white">
                                     Just  say hello
                                     </p>
                                   
