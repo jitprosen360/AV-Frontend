@@ -12,11 +12,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-
-      // screens: {
-      //   'macbook': '1512px', // Custom breakpoint for MacBook
-      //   'large-window': '1920px', // Custom breakpoint for large window
-      // },
+   
     },
   },
   plugins: [],

@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import Link from 'next/link';
 
 const images = {
-    Designerrr: 'designer_box.jpg',
+    Designer: 'designer_box.jpg',
     Casual: 'casual_box.jpg',
     Athleisure: 'athleisure_box.jpg',
     Lounge: 'lounge_box.jpg',
@@ -82,17 +83,20 @@ function LeftNav2() {
                   onMouseLeave={() => setHoveredItem(null)}
                   className="left_nav"
                 >
-                  <a>{item}</a>
+                  <Link href={`/${item.toLowerCase()}Page`}>{item}</Link>
                 </div>
               ))}
             </div>
           </div>
 
 
+<div className='h-screen w-full	absolute'> 
           <div className="leftBar"></div>
               <div className="righttBar"></div>
               <div className="topBar"></div>
               <div className="bottomBar"></div>
+</div>
+
               <div className="cornerShowcase z-50">
 
                 <div className="absolute top-0 left-0 z-50">
