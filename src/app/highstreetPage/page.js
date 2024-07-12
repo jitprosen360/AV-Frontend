@@ -7,6 +7,7 @@ import TopNav from '../topNav';
 import CustomCursor from '../component/customCursor';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import LeftNav2 from '../leftNav2';
  
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -107,6 +108,7 @@ function HighstreetPage() {
             <div id="smooth-wrapper" ref={main}>
                 <div id="smooth-content">
        <TopNav />
+       <LeftNav2/>
        <LeftNavInner />
         <div ref={fiveShowcaseRef} className="ShowCaseSection   bg-[url('/highstreet_bg.jpg')] ">
            

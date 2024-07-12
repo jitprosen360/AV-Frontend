@@ -1490,6 +1490,13 @@ video {
   transition-duration: 300ms;
 }
 
+* {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
 body {
   cursor: none;
 }
@@ -1693,8 +1700,9 @@ nav {
 
 .cornerShowcase {
   position: absolute;
-  width: calc(32vw - 17px);
-  left: calc(34vw + 0px);
+  /* width:calc(32vw - 17px); */
+  width:32vw;
+  right:34vw;
   top: 10vh;
   height: 80vh;
   overflow: hidden;

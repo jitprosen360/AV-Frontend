@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useLayoutEffect, useRef } from 'react';
-
+import Link from 'next/link';
 
 
 import { gsap } from 'gsap';
@@ -92,13 +92,15 @@ export default function Home() {
      
       <div id="smooth-wrapper" ref={main}>
         <div id="smooth-content">
-          <nav className="absolute container z-50 mt-3 bg-black">
-            <div className="relative container mx-auto flex items-center justify-between">
+          <nav className="absolute w-full z-50 mt-3">
+            <div className="relative w-full mx-auto flex items-center justify-between">
               <div className="absolute left-0 h-12 flex items-center justify-center">
                 <MenuAnimation />
               </div>
               <div className="logo w-24 h-12 mx-auto flex items-center justify-center">
-                <img src='./logo_av.svg' alt="Logo" />
+              <Link href="/">
+            <img src='./logo_av.svg' alt="Logo" className="cursor-pointer" />
+          </Link>
               </div>
               <div className="absolute right-0 mr-4 h-12 flex items-center justify-center">
                 <a href="#" className="schdule">Schedule a call</a>
@@ -154,7 +156,7 @@ export default function Home() {
               <div className="righttBar"></div>
               <div className="topBar"></div>
               <div className="bottomBar"></div>
-              <div className="cornerShowcase z-50">
+              <div className="cornerShowcase z-50 ">
 
                 <div className="absolute top-0 left-0 z-50">
                   <img src="corner-left-top-2.svg" alt="top-left corner" className="w-8 h-8" />
@@ -178,7 +180,7 @@ export default function Home() {
                     src={images[item]}
                     alt={item}
                     className={`cornerBox absolute w-64 h-auto transition-opacity duration-300 ${hoveredItem === item ? 'opacity-100' : 'opacity-0'}`}
-                    style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
+                    style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)',  }}
                   />
                 ))}
               </div>

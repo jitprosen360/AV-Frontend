@@ -7,6 +7,7 @@ import TopNav from '../topNav';
 import CustomCursor from '../component/customCursor';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import LeftNav2 from '../leftNav2';
  
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -38,6 +39,7 @@ function DesignerPage() {
             <div id="smooth-wrapper" ref={main}>
                 <div id="smooth-content">
        <TopNav />
+       <LeftNav2/>
        <LeftNavInner />
         <div className="ShowCaseSection  bg-[url('/designer_bg.jpg')]">
             <div className='oneShowcase pl-20 lg:ml-0 '> 
