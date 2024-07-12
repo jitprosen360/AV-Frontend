@@ -161,8 +161,8 @@ function TopNav() {
 
   return (
     <>
-           <nav className="absolute container z-50 mt-3 bg-black">
-            <div className="relative container mx-auto flex items-center justify-between">
+           <nav className="absolute w-full z-50 mt-3 bg-black">
+            <div className="relative w-full mx-auto flex items-center justify-between">
               <div className="absolute left-0 h-12 flex items-center justify-center">
               <a className="openMenubtn" onClick={handleMenuClick} style={{ opacity: 1 }}>Menu</a>
               <a className="closeMenubtn" onClick={handleMenuClick} style={{ display: 'none', opacity: 0 }}>Close <span>X</span></a>
