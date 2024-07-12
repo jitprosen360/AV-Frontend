@@ -7,6 +7,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import CustomCursor from '../component/customCursor';
 import TopNav from '../topNav';
+import SquerAnimation from '../squerAnimation';
+import LeftNav2 from '../leftNav2';
  
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -99,9 +101,11 @@ function OthersPage() {
     return (
         <>
         <CustomCursor />
+        <SquerAnimation/>
             <div id="smooth-wrapper" ref={main}>
                 <div id="smooth-content">
        <TopNav />
+       <LeftNav2/>
        <LeftNavInner />
         <div ref={elevenShowcaseRef} className="ShowCaseSection  bg-red-500 bg-[url('/others.jpg')] ">
            <div className='elevenShowcase'> 
