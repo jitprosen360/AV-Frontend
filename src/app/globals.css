@@ -1577,7 +1577,7 @@ body a:hover .custom-cursor .inner-dot,
 }
 
 .leftPanel a {
-  color:#FFF;
+  color: #FFF;
   font-size: 14px;
   border-radius: 50px;
   padding: 6px 18px 7px;
@@ -1638,8 +1638,8 @@ nav {
 .cornerShowcase {
   position: absolute;
   /* width:calc(32vw - 17px); */
-  width:32vw;
-  right:34vw;
+  width: 32vw;
+  right: 34vw;
   top: 10vh;
   height: 80vh;
   overflow: hidden;
@@ -1730,7 +1730,7 @@ nav {
   height: 500px;
   background-position: center center;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   border-radius: 7px;
   background-color: #FF6D3A;
 }
@@ -1740,10 +1740,10 @@ nav {
   height: 250px;
   background-position: center center;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   border-radius: 7px;
   background-color: #FF6D3A;
-  right:0;
+  right: 0;
 }
 
 .ScrollSection {
@@ -1821,8 +1821,19 @@ nav {
   line-height: 1;
 }
 
-.menuContent li {
+.menuContentCover {
+  position: absolute;
+  top: 72vh;
+  height: 50vh;
+  width: 100%;
+  z-index: 50;
+  left: -300px;
+}
+
+.menuContentCover .menuContent li {
   color: #000;
+  padding-left: 15px;
+  font-size: 22px;
 }
 
 .menuContent {
@@ -1830,6 +1841,10 @@ nav {
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+}
+
+.menuContent li {
+  color: #000;
 }
 
 .menuItem {
@@ -1975,28 +1990,28 @@ nav {
   font-family: "Anek Gurmukhi", "sans-serif";
 }
 
-.roboto{
+.roboto {
   font-family: "Roboto", sans-serif;
 }
 
 .main-yell-bg {
-  background-color : #FBFD5D;
-  height:1450px;
+  background-color: #FBFD5D;
+  height: 1450px;
 }
 
-.ml-custom{
+.ml-custom {
   margin-left: -20px;
 }
 
-.w-22{
+.w-22 {
   width: 6.5rem;
 }
 
-.w-70{
+.w-70 {
   width: 70%;
 }
 
-.h-40{
+.h-40 {
   height: 40rem;
 }
 
@@ -2027,7 +2042,7 @@ nav {
   color: #FF6D3A;
 }
 
-.fill-star{
+.fill-star {
   fill: #FFAC1A;
 }
 
@@ -2037,7 +2052,7 @@ nav {
 }
 
 .faq ul li {
-  border-bottom : 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .help {
@@ -2045,18 +2060,18 @@ nav {
 }
 
 .cborder {
-  border-bottom : 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .cborder-top {
-  border-top : 1px solid #fff;
+  border-top: 1px solid #fff;
 }
 
 .custom-rotation {
   transform: rotate(-45deg);
 }
 
-.size-2{
+.size-2 {
   width: 1rem;
   height: 1rem;
 }
@@ -2083,21 +2098,21 @@ nav {
 
 /* new css for fix and responsive */
 
-.leftBarLoader{
+.leftBarLoader {
   height: 100vh;
   width: 34vw;
   position: absolute;
   z-index: 999;
 }
 
-.righttBarLoader{
+.righttBarLoader {
   height: 100vh;
   width: 34vw;
   position: absolute;
   z-index: 999;
 }
 
-.topBarLoader{
+.topBarLoader {
   height: 10vh;
   width: 100vw;
   position: absolute;
@@ -2417,6 +2432,10 @@ body {
     margin-left: 0px;
   }
 
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:h-80{
     height: 20rem;
   }
@@ -2551,7 +2570,7 @@ body {
     height: 500px;
     background-position: center center;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     border-radius: 7px;
     background-color: #FF6D3A;
   }
