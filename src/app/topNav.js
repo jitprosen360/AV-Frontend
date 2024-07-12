@@ -148,14 +148,115 @@ function TopNav() {
     });
   };
 
+
+
+  const openMenuMobile = () => {
+
+    gsap.to('.leftPanel',    
+      { left:-250 },
+    );
+ 
+    gsap.fromTo('.leftPanel2', { 
+      marginLeft:'-250px'
+    }, {
+        delay:1.1,marginLeft:'15px', duration:1, ease: "power4.out",
+    });
+
+
+
+    gsap.fromTo('.leftBar', {
+      zIndex: '30', position: 'absolute', height: '100vh', left: '0', width: '0px', backgroundColor: "#fff",
+    }, {
+      delay: 0.5, position: 'absolute', height: '100vh', left: '0', backgroundColor: "#fff", duration: 1, width: '2vw', ease: "power4.in",
+    });
+
+    gsap.fromTo('.righttBar', {
+      zIndex: '30', position: 'absolute', height: '100vh', right: '0', width: '0px', backgroundColor: "#fff",
+    }, {
+      delay: 0.5, position: 'absolute', height: '100vh', right: '0', backgroundColor: "#fff", duration: 1, width: '2vw', ease: "power4.in",
+    });
+
+    gsap.fromTo('.topBar', {
+      zIndex: '30', position: 'absolute', top: '0', height: '0vh', width: '100vw', backgroundColor: "#fff",
+    }, {
+      delay: 0.5, position: 'absolute', top: '0', height: '10vh', width: '100vw', backgroundColor: "#fff", duration: 1, ease: "power4.in",
+    });
+
+    gsap.fromTo('.bottomBar', {
+      position: 'absolute', bottom: '0', height: '0vh', width: '100vw', backgroundColor: "#fff",
+    }, {
+      delay: 0.5, zIndex: '30', position: 'absolute', bottom: '0', height: '10vh', width: '100vw', backgroundColor: "#fff", duration: 1, ease: "power4.in",
+    });
+
+  }
+
+  const closeMenuMobile = () => {
+    gsap.to('.leftPanel',    
+      { left:'5px' },
+    );
+
+ 
+    gsap.fromTo('.leftPanel2', 
+      {marginLeft:'15px',}, 
+      {delay:0.2, marginLeft:'-250px', duration:0.4,});
+ 
+
+
+
+    gsap.fromTo('.leftBar', {
+      position: 'absolute', height: '100vh', left: '0', backgroundColor: "#fff", width: '2vw'
+    }, {
+      delay: 0.5, zIndex: '30', position: 'absolute', height: '100vh', left: '0', width: '0px', backgroundColor: "#fff", duration: 1.5, ease: "power3.out",
+    });
+    gsap.fromTo('.righttBar', {
+      position: 'absolute', height: '100vh', right: '0', backgroundColor: "#fff", width: '2vw'
+    }, {
+      delay: 0.5, zIndex: '30', position: 'absolute', height: '100vh', right: '0', width: '0px', backgroundColor: "#fff", duration: 1.5, ease: "power3.out",
+    });
+    gsap.fromTo('.topBar', {
+      position: 'absolute', top: '0', height: '10vh', width: '100vw', backgroundColor: "#fff",
+    }, {
+      delay: 0.5, zIndex: '30', position: 'absolute', top: '0', height: '0vh', width: '100vw', backgroundColor: "#fff", duration: 1.5, ease: "power3.out",
+    });
+    gsap.fromTo('.bottomBar', {
+      position: 'absolute', bottom: '0', height: '10vh', width: '100vw', backgroundColor: "#fff",
+    }, {
+      delay: 0.5, zIndex: '30', position: 'absolute', bottom: '0', height: '0vh', width: '100vw', backgroundColor: "#fff", duration: 1.5, ease: "power3.out",
+    });
+
+  }
+
+ 
+
+
+  // const handleMenuClick = () => {
+  //   if (isExpanded) {
+  //     closeMenuTimeline();
+  //   } else {
+  //     openMenuTimeline();
+  //   }
+  //   setIsExpanded(!isExpanded);
+  // };
+
+
+
+
   const handleMenuClick = () => {
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    
     if (isExpanded) {
-      closeMenuTimeline();
+      isMobile ? closeMenuMobile() : closeMenuTimeline();
     } else {
-      openMenuTimeline();
+      isMobile ? openMenuMobile() : openMenuTimeline();
     }
+
     setIsExpanded(!isExpanded);
   };
+
+
+
+
+
 
 
 

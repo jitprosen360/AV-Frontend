@@ -32,6 +32,7 @@ import Compare from './component/compare';
 import Faq from './component/faq';
 import Howcanhelp from './component/howcanhelp';
 import LeftNav from './leftNav';
+import SquerAnimation from './squerAnimation';
 
 
 const images = {
@@ -89,7 +90,7 @@ export default function Home() {
   return (
     <>
       <CustomCursor />
-     
+     <SquerAnimation/>
       <div id="smooth-wrapper" ref={main}>
         <div id="smooth-content">
           <nav className="absolute w-full z-50 mt-3">
@@ -144,7 +145,7 @@ export default function Home() {
                   onMouseLeave={() => setHoveredItem(null)}
                   className="left_nav"
                 >
-                  <a>{item}</a>
+                   <Link href={`/${item.toLowerCase()}Page`}>{item}</Link>
                 </div>
               ))}
             </div>
