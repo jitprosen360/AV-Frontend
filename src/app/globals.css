@@ -1583,13 +1583,13 @@ body a:hover .custom-cursor .inner-dot,
   transition: border 0.3s ease;
 }
 
-.schdule {
-  padding: 12px 25px;
+.schduleSM {
+  padding: 10px 18px;
   border-radius: 5px;
   background-color: #FFE700;
   color: #000;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .leftPanel {
@@ -2496,6 +2496,15 @@ body {
 
   .lg\:text-\[74px\]{
     font-size: 74px;
+  }
+
+  .lg\:schdule {
+    padding: 12px 25px;
+    border-radius: 5px;
+    background-color: #FFE700;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
   }
 
   .lg\:compresCover {
